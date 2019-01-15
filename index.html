@@ -18,7 +18,7 @@
 			var LIrespuestas = $(ULrespuestas[i]).find("li");
 			
 			for(var j=0; LIrespuestas.length; j++){
-				var respuesta = $(LIrespuestas).find("div.fx div.fx div").innerHTML;
+				var respuesta = $(LIrespuestas[j]).find("div.fx div.fx div").innerHTML;
 				console.log(respuesta);
 				tabla[cont][1].push(respuesta);
 			}

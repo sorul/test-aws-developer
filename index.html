@@ -18,22 +18,21 @@
 		console.log($(ULrespuestas[i]));
 			var LIrespuestas = $(ULrespuestas[i]).find("li");
 			console.log(LIrespuestas.length);
-			/*
 			for(var j=0; LIrespuestas.length; j++){
 				console.log("HELLO");
-				//var respuesta = $(LIrespuestas[j]).find("div.fx div.fx div").innerHTML;
-				//tabla[cont][1].push(respuesta);
-			}*/
+				var respuesta = $(LIrespuestas[j]).find("div.fx div.fx div")[0].innerHTML;
+				tabla[cont][1].push(respuesta);
+			}
 			cont = cont + 1;
 		}
-		/*
+		
 		console.log("B");
 		var explicaciones = $("h4");
 		for(var i=0; explicaciones.length; i++){
 			tabla[i].push(explicaciones[i]);
 		}
 		console.log("C");
-		console.log(tabla[0]);*/
+		console.log(tabla[0]);
 	  
 	});
 </script>

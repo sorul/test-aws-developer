@@ -18,7 +18,7 @@
 			var LIrespuestas = $(ULrespuestas[i]).find("li");
 			for(var j=0; LIrespuestas.length; j++){
 				var respuesta = $(LIrespuestas[j]).find("div.fx div.fx div").innerHTML;
-				console.log(respuesta);
+				$(document.body).append(respuesta);
 				tabla[cont][1].push(respuesta);
 			}
 			cont = cont + 1;
@@ -35,7 +35,7 @@
 	});
 </script>
 
-jojojo
+jejejeje
 
 <!-- ======================================================== TEST 1 ======================================================== -->
 

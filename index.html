@@ -11,13 +11,15 @@
 		for(var i=0; i<preguntas.length; i++){
 			tabla.push([preguntas[i].innerHTML,[]]);
 		}
-		var respuestas = $("ul div.fx div.fx div");
+		var ULrespuestas = $("form ul");
 		var cont = 0;
-		for(var i=0; i<respuestas.length; i++){
-			tabla[cont][1].push(respuestas[i].innerHTML)
-			tabla[cont][1].push(respuestas[i].innerHTML)
-			tabla[cont][1].push(respuestas[i].innerHTML)
-			cont=cont+1;
+		for(var i=0; i<ULrespuestas.length; i++){
+			var LIrespuestas = $(ULrespuestas[i]).find("li")
+			for(var j=0; LIrespuestas.length; j++){
+				var respuesta = $(LIrespuestas).find("div.fx div.fx div").innerHTML;
+				tabla[cont][1].push(respuesta);
+			}
+			cont = cont + 1;
 		}
 		var explicaciones = $("h4")
 		for(var i=0; explicaciones.length; i++){
@@ -28,7 +30,7 @@
 	});
 </script>
 
-dilwejdjo
+jajajaj
 
 <!-- ======================================================== TEST 1 ======================================================== -->
 

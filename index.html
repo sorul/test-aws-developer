@@ -5,21 +5,18 @@
 </head>
 <body>
 <script> 
-    $(function(){
-	//INCLUDE
-      //$("#test1").load("test1.html");
+	$(function(){
+		var tabla = []
+		var preguntas = $(".quiz-question--header--hkqKL div");
+		console.log(preguntas[0])
+		for(var i=0; i<preguntas.length; i++){
+			tabla.push(preguntas[i])
+		}
 	  
-	  //CARGAR
-	  var preguntas = $(".quiz-question--header--hkqKL div");
-	  console.log(preguntas)
-	  for(var i=0; i<preguntas.length; i++){
-		console.log(preguntas[i].text());
-	  }
-	  
-    });
+	});
 </script>
 
-ggg
+hhh
 
 <!-- ======================================================== TEST 1 ======================================================== -->
 

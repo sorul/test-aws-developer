@@ -15,7 +15,9 @@
 		var ULrespuestas = $("form ul");
 		var cont = 0;
 		for(var i=0; i<ULrespuestas.length; i++){
+		console.log($(ULrespuestas[i]));
 			var LIrespuestas = $(ULrespuestas[i]).find("li");
+			console.log(LIrespuestas.length);
 			/*
 			for(var j=0; LIrespuestas.length; j++){
 				console.log("HELLO");

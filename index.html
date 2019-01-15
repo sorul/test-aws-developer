@@ -6,11 +6,24 @@
 <body>
 <script> 
 	$(function(){
-		var tabla = []
+		var tabla = [] // [pregunta, [r1,r2,r3], explicacion]
 		var preguntas = $(".quiz-question--header--hkqKL div");
 		for(var i=0; i<preguntas.length; i++){
-			tabla.push(preguntas[i].innerHTML);
+			tabla.push([preguntas[i].innerHTML,[]);
 		}
+		var respuestas = $("ul div.fx div.fx div");
+		var cont = 0;
+		for(var i=0; i<respuestas.length; i++){
+			tabla[cont][1].push(respuestas[i].innerHTML)
+			tabla[cont][1].push(respuestas[i].innerHTML)
+			tabla[cont][1].push(respuestas[i].innerHTML)
+			cont=cont+1;
+		}
+		var explicaciones = $("h4")
+		for(var i=0; explicaciones.length; i++){
+			tabla[i].push(explicaciones[i]);
+		}
+		console.log(tabla[0])
 	  
 	});
 </script>

@@ -13,8 +13,7 @@
 			$("#pregunta").append("<li>"+pregunta[1][i]+"</li>");
 		}
 		$("#pregunta").append("</ul>");
-		$("#pregunta").append(pregunta[2]);
-		console.log("hola");
+		$("#pregunta").append("<bold>"+pregunta[2]+"</bold>");
 	}
 	$(function(){
 		var tabla = [] // [pregunta, [r1,r2,r3], explicacion]
@@ -30,9 +29,9 @@
 			for(var j=0; j<LIrespuestas.length; j++){
 				var divRespuesta = $(LIrespuestas[j]).find("div.fx div.fx");
 				if(divRespuesta.next().length!=0){ //Respuesta correcta
-					var respuesta = "<div style='color:green'>"+divRespuesta.children()[0].innerHTML+"</div>";
+					var respuesta = "<span style='color:green'>"+divRespuesta.children()[0].innerHTML+"</span>";
 				}else{ //Respuesta incorrecta
-					var respuesta = "<div>"+divRespuesta.children()[0].innerHTML+"</div>";
+					var respuesta = "<span>"+divRespuesta.children()[0].innerHTML+"</span>";
 				}
 				tabla[cont][1].push(respuesta);
 			}
@@ -44,11 +43,15 @@
 		for(var i=0; i<explicaciones.length; i++){
 			tabla[i].push($(explicaciones[0]).next()[0].innerHTML);
 		}
-		var indiceAleatorio = Math.floor((Math.random() * (tabla.length-1)));
-		pintarPregunta(tabla[indiceAleatorio])
-	  
+		var indicesAleatorios = [...Array(tabla.length-1).keys()].sort(function() {return Math.random() - 0.5});
+		var indiceActual = 0;
+		
+		$("button").click(function(){
+			pintarPregunta(tabla[indiceActual++]);
+		});
 	});
 </script>
+<button>Siguiente</button>
 
 <div id="pregunta"></div>
 

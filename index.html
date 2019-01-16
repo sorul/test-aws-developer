@@ -4,8 +4,15 @@
 
 </head>
 <body>
-zzzz
-<script> 
+<script>
+
+	function pintarPregunta(pregunta){
+		$("#pregunta").append("<tr>"+pregunta[0]+"</tr>");
+		for(var i=0; i<pregunta[1].length; i++){
+			$("#pregunta").append("<tr>"+pregunta[1][i]+"</tr>");
+		}
+		$("#pregunta").append("<tr>"+pregunta[2]+"</tr>");
+	}
 	$(function(){
 		var tabla = [] // [pregunta, [r1,r2,r3], explicacion]
 		var preguntas = $(".quiz-question--header--hkqKL div");
@@ -34,10 +41,13 @@ zzzz
 		for(var i=0; i<explicaciones.length; i++){
 			tabla[i].push($(explicaciones[0]).next()[0].innerHTML);
 		}
-		console.log(tabla);
+		var indiceAleatorio = Math.floor((Math.random() * (tabla.length-1)));
+		pintarPregunta(tabla[indiceAleatorio])
 	  
 	});
 </script>
+
+<table id="pregunta"></table>
 
 
 

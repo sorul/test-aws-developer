@@ -4,7 +4,7 @@
 
 </head>
 <body>
-wwwwww
+xx
 <script> 
 	$(function(){
 		var tabla = [] // [pregunta, [r1,r2,r3], explicacion]
@@ -32,7 +32,7 @@ wwwwww
 		
 		var explicaciones = $("h4");
 		for(var i=0; i<explicaciones.length; i++){
-			tabla[i].push(explicaciones[i].innerHTML);
+			tabla[i].push(explicaciones[i].next().innerHTML);
 		}
 		console.log(tabla);
 	  

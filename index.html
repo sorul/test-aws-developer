@@ -17,7 +17,7 @@
 	}
 	$(function(){
 		var tabla = [] // [pregunta, [r1,r2,r3], explicacion]
-		var preguntas = $("form div:first div");
+		var preguntas = $("form question div");
 		for(var i=0; i<preguntas.length; i++){
 			tabla.push([preguntas[i].innerHTML,[]]);
 		}
@@ -72,7 +72,7 @@
 <div id="test1" style="visibility:hidden">
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
 	  <form class="">
-		 <div class="quiz-question--header--hkqKL">
+		 <div class="question hkqKL">
 			<span>Question 1: </span><span class="quiz-question--skipped--3vxeT label label-default">Skipped</span>
 			<div class="quiz-question--question-prompt--bNC4q" id="question-prompt">Which language is not supported by CloudFormation?</div>
 		 </div>
@@ -129,7 +129,7 @@
    </div>
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
 	  <form class="">
-		 <div class="quiz-question--header--hkqKL">
+		 <div class="question hkqKL">
 			<span>Question 2: </span><span class="quiz-question--skipped--3vxeT label label-default">Skipped</span>
 			<div class="quiz-question--question-prompt--bNC4q" id="question-prompt">You are building a movie database. Which attribute is the best partition key to maximize data distribution in DynamoDB?</div>
 		 </div>
@@ -200,7 +200,7 @@
    </div>
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
 	  <form class="">
-		 <div class="quiz-question--header--hkqKL">
+		 <div class="question hkqKL">
 			<span>Question 3: </span><span class="quiz-question--skipped--3vxeT label label-default">Skipped</span>
 			<div class="quiz-question--question-prompt--bNC4q" id="question-prompt">Which pseudo parameter can you use to make your CloudFormation independent of the accounts they're running under?</div>
 		 </div>
@@ -271,7 +271,7 @@
    </div>
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
 	  <form class="">
-		 <div class="quiz-question--header--hkqKL">
+		 <div class="question hkqKL">
 			<span>Question 4: </span><span class="quiz-question--skipped--3vxeT label label-default">Skipped</span>
 			<div class="quiz-question--question-prompt--bNC4q" id="question-prompt">The company has a requirement to delete the data from CloudWatch Logs after 1 week for security compliance. Which feature will help you in achieving that?</div>
 		 </div>
@@ -342,7 +342,7 @@
    </div>
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
 	  <form class="">
-		 <div class="quiz-question--header--hkqKL">
+		 <div class="question hkqKL">
 			<span>Question 5: </span><span class="quiz-question--skipped--3vxeT label label-default">Skipped</span>
 			<div class="quiz-question--question-prompt--bNC4q" id="question-prompt">Your Elastic Beanstalk application must encrypt payloads of up to 10MB. Which method will help you achieve that?</div>
 		 </div>
@@ -413,7 +413,7 @@
    </div>
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
 	  <form class="">
-		 <div class="quiz-question--header--hkqKL">
+		 <div class="question hkqKL">
 			<span>Question 6: </span><span class="quiz-question--skipped--3vxeT label label-default">Skipped</span>
 			<div class="quiz-question--question-prompt--bNC4q" id="question-prompt">You have requested credentials using STS when your applications boots. After an hour, your application stops working and needs to be manually restarted to work again. What is happening?</div>
 		 </div>
@@ -484,7 +484,7 @@
    </div>
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
 	  <form class="">
-		 <div class="quiz-question--header--hkqKL">
+		 <div class="question hkqKL">
 			<span>Question 7: </span><span class="quiz-question--skipped--3vxeT label label-default">Skipped</span>
 			<div class="quiz-question--question-prompt--bNC4q" id="question-prompt">What is the naming convention for files allowing you to control your Elastic Beanstalk settings?</div>
 		 </div>
@@ -555,7 +555,7 @@
    </div>
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
 	  <form class="">
-		 <div class="quiz-question--header--hkqKL">
+		 <div class="question hkqKL">
 			<span>Question 8: </span><span class="quiz-question--skipped--3vxeT label label-default">Skipped</span>
 			<div class="quiz-question--question-prompt--bNC4q" id="question-prompt">What are SNS messages sent to?</div>
 		 </div>
@@ -626,7 +626,7 @@
    </div>
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
 	  <form class="">
-		 <div class="quiz-question--header--hkqKL">
+		 <div class="question hkqKL">
 			<span>Question 9: </span><span class="quiz-question--skipped--3vxeT label label-default">Skipped</span>
 			<div class="quiz-question--question-prompt--bNC4q" id="question-prompt">You would like to store user session in an in-memory store that has extremely low latency. What service should you use?</div>
 		 </div>
@@ -697,7 +697,7 @@
    </div>
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
 	  <form class="">
-		 <div class="quiz-question--header--hkqKL">
+		 <div class="question hkqKL">
 			<span>Question 10: </span><span class="quiz-question--skipped--3vxeT label label-default">Skipped</span>
 			<div class="quiz-question--question-prompt--bNC4q" id="question-prompt">You are looking to run the same application multiple times on your EC2 instance and expose it with a load balancer. You should use</div>
 		 </div>
@@ -768,7 +768,7 @@
    </div>
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
 	  <form class="">
-		 <div class="quiz-question--header--hkqKL">
+		 <div class="question hkqKL">
 			<span>Question 11: </span><span class="quiz-question--skipped--3vxeT label label-default">Skipped</span>
 			<div class="quiz-question--question-prompt--bNC4q" id="question-prompt">What is the most simple way to run a CLI command against a region that hasn't been configured as the default?</div>
 		 </div>
@@ -839,7 +839,7 @@
    </div>
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
 	  <form class="">
-		 <div class="quiz-question--header--hkqKL">
+		 <div class="question hkqKL">
 			<span>Question 12: </span><span class="quiz-question--skipped--3vxeT label label-default">Skipped</span>
 			<div class="quiz-question--question-prompt--bNC4q" id="question-prompt">You want to give a temporary read access to your S3 files. How can you do this ?</div>
 		 </div>
@@ -910,7 +910,7 @@
    </div>
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
 	  <form class="">
-		 <div class="quiz-question--header--hkqKL">
+		 <div class="question hkqKL">
 			<span>Question 13: </span><span class="quiz-question--skipped--3vxeT label label-default">Skipped</span>
 			<div class="quiz-question--question-prompt--bNC4q" id="question-prompt">You have a Pipeline in AWS CodePipeline that contains a lot of steps. Some steps need to be ordered while other can run simultaneously. You would like to speed up your CodePipeline. How do you achieve it?</div>
 		 </div>
@@ -981,7 +981,7 @@
    </div>
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
 	  <form class="">
-		 <div class="quiz-question--header--hkqKL">
+		 <div class="question hkqKL">
 			<span>Question 14: </span><span class="quiz-question--skipped--3vxeT label label-default">Skipped</span>
 			<div class="quiz-question--question-prompt--bNC4q" id="question-prompt">You want to deploy an application that relies on RDS and ElastiCache for storing data and user session data respectively. You have chosen Elastic Beanstalk as the platform to deploy the platform. The requirements are that the RDS database must be able to be used across different environments and never lost, while ElastiCache can be safely deployed for each environment and lost if an environment is destroyed. Which configuration will allow you to achieve that? (select two)</div>
 		 </div>
@@ -1067,7 +1067,7 @@
    </div>
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
 	  <form class="">
-		 <div class="quiz-question--header--hkqKL">
+		 <div class="question hkqKL">
 			<span>Question 15: </span><span class="quiz-question--skipped--3vxeT label label-default">Skipped</span>
 			<div class="quiz-question--question-prompt--bNC4q" id="question-prompt">In order to retrieve the region ID of an EC2 instance created with CloudFormation, which function should you use?</div>
 		 </div>
@@ -1138,7 +1138,7 @@
    </div>
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
 	  <form class="">
-		 <div class="quiz-question--header--hkqKL">
+		 <div class="question hkqKL">
 			<span>Question 16: </span><span class="quiz-question--skipped--3vxeT label label-default">Skipped</span>
 			<div class="quiz-question--question-prompt--bNC4q" id="question-prompt">You want a deployment tool which will also provision instances if they are needed. Which service should you use?</div>
 		 </div>
@@ -1209,7 +1209,7 @@
    </div>
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
 	  <form class="">
-		 <div class="quiz-question--header--hkqKL">
+		 <div class="question hkqKL">
 			<span>Question 17: </span><span class="quiz-question--skipped--3vxeT label label-default">Skipped</span>
 			<div class="quiz-question--question-prompt--bNC4q" id="question-prompt">You want to mask some fields returned by your Lambda functions before going back to the clients, through the API Gateway. How can you achieve that?</div>
 		 </div>
@@ -1280,7 +1280,7 @@
    </div>
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
 	  <form class="">
-		 <div class="quiz-question--header--hkqKL">
+		 <div class="question hkqKL">
 			<span>Question 18: </span><span class="quiz-question--incorrect--1g29S">Incorrect</span>
 			<div class="quiz-question--question-prompt--bNC4q" id="question-prompt">You have deployed a Java application on EC2 and made sure to enable the X-Ray SDK. The application was sending data to X-Ray when you tested it from your personal computer. The deployed application fails to send data to X-Ray. Which of the following component debugging won't help resolve the problem?</div>
 		 </div>
@@ -1352,7 +1352,7 @@
    </div>
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
 	  <form class="">
-		 <div class="quiz-question--header--hkqKL">
+		 <div class="question hkqKL">
 			<span>Question 19: </span><span class="quiz-question--skipped--3vxeT label label-default">Skipped</span>
 			<div class="quiz-question--question-prompt--bNC4q" id="question-prompt">You want to route traffic based on the location of your resources and, optionally, shift traffic from resources in one location to resources in another. Which routing policy is suitable for your case ?</div>
 		 </div>
@@ -1437,7 +1437,7 @@
    </div>
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
 	  <form class="">
-		 <div class="quiz-question--header--hkqKL">
+		 <div class="question hkqKL">
 			<span>Question 20: </span><span class="quiz-question--skipped--3vxeT label label-default">Skipped</span>
 			<div class="quiz-question--question-prompt--bNC4q" id="question-prompt">Which of the following is not a valid CloudFormation section?</div>
 		 </div>
@@ -1508,7 +1508,7 @@
    </div>
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
 	  <form class="">
-		 <div class="quiz-question--header--hkqKL">
+		 <div class="question hkqKL">
 			<span>Question 21: </span><span class="quiz-question--skipped--3vxeT label label-default">Skipped</span>
 			<div class="quiz-question--question-prompt--bNC4q" id="question-prompt">You are currently storing 500 GB of data on your S3 bucket "my-corp". What's the maximum file size an S3 bucket can contain?</div>
 		 </div>
@@ -1579,7 +1579,7 @@
    </div>
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
 	  <form class="">
-		 <div class="quiz-question--header--hkqKL">
+		 <div class="question hkqKL">
 			<span>Question 22: </span><span class="quiz-question--skipped--3vxeT label label-default">Skipped</span>
 			<div class="quiz-question--question-prompt--bNC4q" id="question-prompt">How many arguments does the CloudFormation !FindInMap function take?</div>
 		 </div>
@@ -1650,7 +1650,7 @@
    </div>
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
 	  <form class="">
-		 <div class="quiz-question--header--hkqKL">
+		 <div class="question hkqKL">
 			<span>Question 23: </span><span class="quiz-question--skipped--3vxeT label label-default">Skipped</span>
 			<div class="quiz-question--question-prompt--bNC4q" id="question-prompt">You would like to distribute your API to various customers and ensure their consumption is limited by the plans they have subscribed to. Which feature allows you to do that?</div>
 		 </div>
@@ -1721,7 +1721,7 @@
    </div>
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
 	  <form class="">
-		 <div class="quiz-question--header--hkqKL">
+		 <div class="question hkqKL">
 			<span>Question 24: </span><span class="quiz-question--skipped--3vxeT label label-default">Skipped</span>
 			<div class="quiz-question--question-prompt--bNC4q" id="question-prompt">What service does Elastic Beanstalk rely on in order to deploy applications to AWS Cloud?</div>
 		 </div>
@@ -1792,7 +1792,7 @@
    </div>
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
 	  <form class="">
-		 <div class="quiz-question--header--hkqKL">
+		 <div class="question hkqKL">
 			<span>Question 25: </span><span class="quiz-question--skipped--3vxeT label label-default">Skipped</span>
 			<div class="quiz-question--question-prompt--bNC4q" id="question-prompt">You would like to query items based on an attribute that is not part of the DynamoDB partition key. What should you do?</div>
 		 </div>
@@ -1863,7 +1863,7 @@
    </div>
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
 	  <form class="">
-		 <div class="quiz-question--header--hkqKL">
+		 <div class="question hkqKL">
 			<span>Question 26: </span><span class="quiz-question--skipped--3vxeT label label-default">Skipped</span>
 			<div class="quiz-question--question-prompt--bNC4q" id="question-prompt">You want to provision your own Docker images that can be used as an input for CodeBuild. These images will contain cached dependencies as well as special tooling for your builds that are proprietary to your company. Where should you push these images?</div>
 		 </div>
@@ -1934,7 +1934,7 @@
    </div>
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
 	  <form class="">
-		 <div class="quiz-question--header--hkqKL">
+		 <div class="question hkqKL">
 			<span>Question 27: </span><span class="quiz-question--skipped--3vxeT label label-default">Skipped</span>
 			<div class="quiz-question--question-prompt--bNC4q" id="question-prompt">Your business model requires that your website will be visited daily from 8am to 11pm except weekends.What is the best EC2 payment plan while reducing the cost of hosting ?</div>
 		 </div>
@@ -2005,7 +2005,7 @@
    </div>
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
 	  <form class="">
-		 <div class="quiz-question--header--hkqKL">
+		 <div class="question hkqKL">
 			<span>Question 28: </span><span class="quiz-question--skipped--3vxeT label label-default">Skipped</span>
 			<div class="quiz-question--question-prompt--bNC4q" id="question-prompt">You would like to implement a 3rd party authentication for your AWS API Gateway. Which authorizer do you choose?</div>
 		 </div>
@@ -2062,7 +2062,7 @@
    </div>
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
 	  <form class="">
-		 <div class="quiz-question--header--hkqKL">
+		 <div class="question hkqKL">
 			<span>Question 29: </span><span class="quiz-question--skipped--3vxeT label label-default">Skipped</span>
 			<div class="quiz-question--question-prompt--bNC4q" id="question-prompt">You know that your build time should not exceed 5 minutes for a particular application. Recently, some HTTP network was hung and CodeBuild was running for over an hour. How can you prevent that issue in the future?</div>
 		 </div>
@@ -2133,7 +2133,7 @@
    </div>
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
 	  <form class="">
-		 <div class="quiz-question--header--hkqKL">
+		 <div class="question hkqKL">
 			<span>Question 30: </span><span class="quiz-question--skipped--3vxeT label label-default">Skipped</span>
 			<div class="quiz-question--question-prompt--bNC4q" id="question-prompt">One of your SQS message is consistently failing to be processed by consumers. It is breaking your applications and you would like to automatically store them somewhere for further debugging. What should you do?</div>
 		 </div>
@@ -2204,7 +2204,7 @@
    </div>
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
 	  <form class="">
-		 <div class="quiz-question--header--hkqKL">
+		 <div class="question hkqKL">
 			<span>Question 31: </span><span class="quiz-question--skipped--3vxeT label label-default">Skipped</span>
 			<div class="quiz-question--question-prompt--bNC4q" id="question-prompt">In DynamoDB, what's the maximum number of attributes that can be combined to form a primary key?</div>
 		 </div>
@@ -2275,7 +2275,7 @@
    </div>
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
 	  <form class="">
-		 <div class="quiz-question--header--hkqKL">
+		 <div class="question hkqKL">
 			<span>Question 32: </span><span class="quiz-question--skipped--3vxeT label label-default">Skipped</span>
 			<div class="quiz-question--question-prompt--bNC4q" id="question-prompt">You are looking to automatically deploy AWS Lambda functions, with precise deployment rollout strategies. Which AWS service should you use?</div>
 		 </div>
@@ -2346,7 +2346,7 @@
    </div>
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
 	  <form class="">
-		 <div class="quiz-question--header--hkqKL">
+		 <div class="question hkqKL">
 			<span>Question 33: </span><span class="quiz-question--skipped--3vxeT label label-default">Skipped</span>
 			<div class="quiz-question--question-prompt--bNC4q" id="question-prompt">Your client is asking how KMS Encryption works. You explain that</div>
 		 </div>
@@ -2417,7 +2417,7 @@
    </div>
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
 	  <form class="">
-		 <div class="quiz-question--header--hkqKL">
+		 <div class="question hkqKL">
 			<span>Question 34: </span><span class="quiz-question--skipped--3vxeT label label-default">Skipped</span>
 			<div class="quiz-question--question-prompt--bNC4q" id="question-prompt">You would like to have a secured and versioned way of storing your database credentials. Which service do you pick?</div>
 		 </div>
@@ -2488,7 +2488,7 @@
    </div>
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
 	  <form class="">
-		 <div class="quiz-question--header--hkqKL">
+		 <div class="question hkqKL">
 			<span>Question 35: </span><span class="quiz-question--skipped--3vxeT label label-default">Skipped</span>
 			<div class="quiz-question--question-prompt--bNC4q" id="question-prompt">You have a fleet of 100 000 trucks that continuously send data to your cloud. This big data stream must be delivered to multiple consuming applications. This solution must be able to scale as the load increases. Which technology is the most suitable?</div>
 		 </div>
@@ -2559,7 +2559,7 @@
    </div>
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
 	  <form class="">
-		 <div class="quiz-question--header--hkqKL">
+		 <div class="question hkqKL">
 			<span>Question 36: </span><span class="quiz-question--skipped--3vxeT label label-default">Skipped</span>
 			<div class="quiz-question--question-prompt--bNC4q" id="question-prompt">
 			   <p>What can't CloudFormation Conditions be applied to?</p>
@@ -2632,7 +2632,7 @@
    </div>
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
 	  <form class="">
-		 <div class="quiz-question--header--hkqKL">
+		 <div class="question hkqKL">
 			<span>Question 37: </span><span class="quiz-question--skipped--3vxeT label label-default">Skipped</span>
 			<div class="quiz-question--question-prompt--bNC4q" id="question-prompt">In order to pass artifacts between various stages, which AWS Service is leveraged by CodePipeline?</div>
 		 </div>
@@ -2703,7 +2703,7 @@
    </div>
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
 	  <form class="">
-		 <div class="quiz-question--header--hkqKL">
+		 <div class="question hkqKL">
 			<span>Question 38: </span><span class="quiz-question--skipped--3vxeT label label-default">Skipped</span>
 			<div class="quiz-question--question-prompt--bNC4q" id="question-prompt">Your SQS consumer takes once in a while an unpredictable long time to process messages, which in turn result in duplicate processing of these messages as they go longer than their default VisibilityTimeout. How can you remedy the situation for the few problematic messages?</div>
 		 </div>
@@ -2774,7 +2774,7 @@
    </div>
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
 	  <form class="">
-		 <div class="quiz-question--header--hkqKL">
+		 <div class="question hkqKL">
 			<span>Question 39: </span><span class="quiz-question--skipped--3vxeT label label-default">Skipped</span>
 			<div class="quiz-question--question-prompt--bNC4q" id="question-prompt">You have stored all your applications secrets in SSM parameter store and your audit team needs to get a report to understand who has been issuing API calls against SSM parameter store. What do you use?</div>
 		 </div>
@@ -2845,7 +2845,7 @@
    </div>
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
 	  <form class="">
-		 <div class="quiz-question--header--hkqKL">
+		 <div class="question hkqKL">
 			<span>Question 40: </span><span class="quiz-question--skipped--3vxeT label label-default">Skipped</span>
 			<div class="quiz-question--question-prompt--bNC4q" id="question-prompt">Your SQS consumer has failed to process a message and you realise it is taking a long time for the message to be read back by other applications. How can you decrease that time?</div>
 		 </div>
@@ -2916,7 +2916,7 @@
    </div>
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
 	  <form class="">
-		 <div class="quiz-question--header--hkqKL">
+		 <div class="question hkqKL">
 			<span>Question 41: </span><span class="quiz-question--skipped--3vxeT label label-default">Skipped</span>
 			<div class="quiz-question--question-prompt--bNC4q" id="question-prompt">You are trying to track API calls made in your AWS account for compliance purposes. Which service should you use?</div>
 		 </div>
@@ -2987,7 +2987,7 @@
    </div>
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
 	  <form class="">
-		 <div class="quiz-question--header--hkqKL">
+		 <div class="question hkqKL">
 			<span>Question 42: </span><span class="quiz-question--skipped--3vxeT label label-default">Skipped</span>
 			<div class="quiz-question--question-prompt--bNC4q" id="question-prompt">You have created a target group which has marked all your EC2 instances as unhealthy. Surprisingly, when you directly enter the IP of the EC2 instances in your web browser, you are able to access your website. So you know it is running, but what could be the reason of your instances being marked as unhealthy? (select two)</div>
 		 </div>
@@ -3073,7 +3073,7 @@
    </div>
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
 	  <form class="">
-		 <div class="quiz-question--header--hkqKL">
+		 <div class="question hkqKL">
 			<span>Question 43: </span><span class="quiz-question--skipped--3vxeT label label-default">Skipped</span>
 			<div class="quiz-question--question-prompt--bNC4q" id="question-prompt">
 			   <p>Within a region, should non exported CloudFormation outputs have distinct names?</p>
@@ -3118,7 +3118,7 @@
    </div>
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
 	  <form class="">
-		 <div class="quiz-question--header--hkqKL">
+		 <div class="question hkqKL">
 			<span>Question 44: </span><span class="quiz-question--skipped--3vxeT label label-default">Skipped</span>
 			<div class="quiz-question--question-prompt--bNC4q" id="question-prompt">Which protocol is not supported by CloudFront?</div>
 		 </div>
@@ -3189,7 +3189,7 @@
    </div>
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
 	  <form class="">
-		 <div class="quiz-question--header--hkqKL">
+		 <div class="question hkqKL">
 			<span>Question 45: </span><span class="quiz-question--skipped--3vxeT label label-default">Skipped</span>
 			<div class="quiz-question--question-prompt--bNC4q" id="question-prompt">
 			   <p>You wish to deploy an application across a fleet of EC2 instances, with precise blue/green strategy. You want full control over the deployment steps and the possibility to add hooks. Which service should you use?</p>
@@ -3262,7 +3262,7 @@
    </div>
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
 	  <form class="">
-		 <div class="quiz-question--header--hkqKL">
+		 <div class="question hkqKL">
 			<span>Question 46: </span><span class="quiz-question--skipped--3vxeT label label-default">Skipped</span>
 			<div class="quiz-question--question-prompt--bNC4q" id="question-prompt">
 			   <p>An application is hosted by a 3rd party and is exposed as yourapp.3rdparty.com. You would like to have your users access your application using www.mydomain.com , which you own and manage under Route53. What record should you create?</p>
@@ -3335,7 +3335,7 @@
    </div>
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
 	  <form class="">
-		 <div class="quiz-question--header--hkqKL">
+		 <div class="question hkqKL">
 			<span>Question 47: </span><span class="quiz-question--skipped--3vxeT label label-default">Skipped</span>
 			<div class="quiz-question--question-prompt--bNC4q" id="question-prompt">You would like to deploy a new application version using Beanstalk but don't want to bring your capacity down. You are also very cost conscious and want to ensure any added cost will be minimal. Which deployment fits your needs?</div>
 		 </div>
@@ -3420,7 +3420,7 @@
    </div>
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
 	  <form class="">
-		 <div class="quiz-question--header--hkqKL">
+		 <div class="question hkqKL">
 			<span>Question 48: </span><span class="quiz-question--skipped--3vxeT label label-default">Skipped</span>
 			<div class="quiz-question--question-prompt--bNC4q" id="question-prompt">Your API Gateway is enabled to send access logs to CloudWatch but it seems that CloudWatch isn't receiving any data. What is the likely root cause of this issue?</div>
 		 </div>
@@ -3491,7 +3491,7 @@
    </div>
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
 	  <form class="">
-		 <div class="quiz-question--header--hkqKL">
+		 <div class="question hkqKL">
 			<span>Question 49: </span><span class="quiz-question--skipped--3vxeT label label-default">Skipped</span>
 			<div class="quiz-question--question-prompt--bNC4q" id="question-prompt">Which of the following is NOT an added resource type by Serverless Application Model?</div>
 		 </div>
@@ -3562,7 +3562,7 @@
    </div>
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
 	  <form class="">
-		 <div class="quiz-question--header--hkqKL">
+		 <div class="question hkqKL">
 			<span>Question 50: </span><span class="quiz-question--skipped--3vxeT label label-default">Skipped</span>
 			<div class="quiz-question--question-prompt--bNC4q" id="question-prompt">CodePipeline fails with an authorisation issue. What is the best way to determine the root cause of the problem?</div>
 		 </div>
@@ -3633,7 +3633,7 @@
    </div>
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
 	  <form class="">
-		 <div class="quiz-question--header--hkqKL">
+		 <div class="question hkqKL">
 			<span>Question 51: </span><span class="quiz-question--skipped--3vxeT label label-default">Skipped</span>
 			<div class="quiz-question--question-prompt--bNC4q" id="question-prompt">Your CodeBuild has failed and you would like to perform some hands-on debugging. How should you proceed?</div>
 		 </div>
@@ -3704,7 +3704,7 @@
    </div>
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
 	  <form class="">
-		 <div class="quiz-question--header--hkqKL">
+		 <div class="question hkqKL">
 			<span>Question 52: </span><span class="quiz-question--skipped--3vxeT label label-default">Skipped</span>
 			<div class="quiz-question--question-prompt--bNC4q" id="question-prompt">
 			   <p>You have a requirement to leverage a managed NoSQL database in the AWS Cloud, that can auto scale. Which database would you choose?</p>
@@ -3777,7 +3777,7 @@
    </div>
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
 	  <form class="">
-		 <div class="quiz-question--header--hkqKL">
+		 <div class="question hkqKL">
 			<span>Question 53: </span><span class="quiz-question--skipped--3vxeT label label-default">Skipped</span>
 			<div class="quiz-question--question-prompt--bNC4q" id="question-prompt">Someone just deleted an EC2 instance. Which AWS Service will allow you to find out who did it?</div>
 		 </div>
@@ -3848,7 +3848,7 @@
    </div>
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
 	  <form class="">
-		 <div class="quiz-question--header--hkqKL">
+		 <div class="question hkqKL">
 			<span>Question 54: </span><span class="quiz-question--skipped--3vxeT label label-default">Skipped</span>
 			<div class="quiz-question--question-prompt--bNC4q" id="question-prompt">Your application needs to have an authentication mechanism that returns a JWT (JSON Web Token) after the user has identified. Which service validates the requirements?</div>
 		 </div>
@@ -3919,7 +3919,7 @@
    </div>
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
 	  <form class="">
-		 <div class="quiz-question--header--hkqKL">
+		 <div class="question hkqKL">
 			<span>Question 55: </span><span class="quiz-question--skipped--3vxeT label label-default">Skipped</span>
 			<div class="quiz-question--question-prompt--bNC4q" id="question-prompt">Your client is migrating an application to the cloud and needs a technology to ensure your application can be stateless and store data in a low latency in memory store. What do you recommend?</div>
 		 </div>
@@ -3990,7 +3990,7 @@
    </div>
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
 	  <form class="">
-		 <div class="quiz-question--header--hkqKL">
+		 <div class="question hkqKL">
 			<span>Question 56: </span><span class="quiz-question--skipped--3vxeT label label-default">Skipped</span>
 			<div class="quiz-question--question-prompt--bNC4q" id="question-prompt">CodeBuild fails as it cannot pull a Docker image stored in ECR. What is the most likely reason?</div>
 		 </div>
@@ -4061,7 +4061,7 @@
    </div>
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
 	  <form class="">
-		 <div class="quiz-question--header--hkqKL">
+		 <div class="question hkqKL">
 			<span>Question 57: </span><span class="quiz-question--skipped--3vxeT label label-default">Skipped</span>
 			<div class="quiz-question--question-prompt--bNC4q" id="question-prompt">You need to dynamically obtain the instance-id of your EC2 instances from within your applications running on the EC2 instances. What's the easiest way to achieve it?</div>
 		 </div>
@@ -4132,7 +4132,7 @@
    </div>
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
 	  <form class="">
-		 <div class="quiz-question--header--hkqKL">
+		 <div class="question hkqKL">
 			<span>Question 58: </span><span class="quiz-question--skipped--3vxeT label label-default">Skipped</span>
 			<div class="quiz-question--question-prompt--bNC4q" id="question-prompt">You would like to deploy a new application version without spending any incremental money while making sure the application does not experience any downtime. Which deployment mode fits your needs?</div>
 		 </div>
@@ -4217,7 +4217,7 @@
    </div>
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
 	  <form class="">
-		 <div class="quiz-question--header--hkqKL">
+		 <div class="question hkqKL">
 			<span>Question 59: </span><span class="quiz-question--skipped--3vxeT label label-default">Skipped</span>
 			<div class="quiz-question--question-prompt--bNC4q" id="question-prompt">You have a CloudFormation template and it starts with:Transform: 'AWS::Serverless-2016-10-31' What does the Transform represent?</div>
 		 </div>
@@ -4274,7 +4274,7 @@
    </div>
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
 	  <form class="">
-		 <div class="quiz-question--header--hkqKL">
+		 <div class="question hkqKL">
 			<span>Question 60: </span><span class="quiz-question--skipped--3vxeT label label-default">Skipped</span>
 			<div class="quiz-question--question-prompt--bNC4q" id="question-prompt">You are looking to push Docker images into ECR with your AWS CodePipeline and CodeBuild. The last step fails with an authorization issue. What is the issue?</div>
 		 </div>
@@ -4345,7 +4345,7 @@
    </div>
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
 	  <form class="">
-		 <div class="quiz-question--header--hkqKL">
+		 <div class="question hkqKL">
 			<span>Question 61: </span><span class="quiz-question--skipped--3vxeT label label-default">Skipped</span>
 			<div class="quiz-question--question-prompt--bNC4q" id="question-prompt">You are creating multiple users and assigning the same IAM policy to them as they perform the same role. What should you have done differently?</div>
 		 </div>
@@ -4416,7 +4416,7 @@
    </div>
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
 	  <form class="">
-		 <div class="quiz-question--header--hkqKL">
+		 <div class="question hkqKL">
 			<span>Question 62: </span><span class="quiz-question--skipped--3vxeT label label-default">Skipped</span>
 			<div class="quiz-question--question-prompt--bNC4q" id="question-prompt">
 			   <p>Which section is mandatory in CloudFormation templates?</p>
@@ -4489,7 +4489,7 @@
    </div>
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
 	  <form class="">
-		 <div class="quiz-question--header--hkqKL">
+		 <div class="question hkqKL">
 			<span>Question 63: </span><span class="quiz-question--skipped--3vxeT label label-default">Skipped</span>
 			<div class="quiz-question--question-prompt--bNC4q" id="question-prompt">Which following two terms belong to the SNS product? (select two)</div>
 		 </div>
@@ -4575,7 +4575,7 @@
    </div>
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
 	  <form class="">
-		 <div class="quiz-question--header--hkqKL">
+		 <div class="question hkqKL">
 			<span>Question 64: </span><span class="quiz-question--skipped--3vxeT label label-default">Skipped</span>
 			<div class="quiz-question--question-prompt--bNC4q" id="question-prompt">Which of the following integration technology pushes data to consumers?</div>
 		 </div>
@@ -4646,7 +4646,7 @@
    </div>
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
 	  <form class="">
-		 <div class="quiz-question--header--hkqKL">
+		 <div class="question hkqKL">
 			<span>Question 65: </span><span class="quiz-question--skipped--3vxeT label label-default">Skipped</span>
 			<div class="quiz-question--question-prompt--bNC4q" id="question-prompt">Which of the following isn't a supported mechanism of authentication for API Gateway?</div>
 		 </div>
@@ -4721,7 +4721,7 @@
 <div id="test2">
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
       <form class="">
-         <div class="quiz-question--header--1W0CB">
+         <div class="question 1W0CB">
             <span>Pregunta 1: </span><span class="quiz-question--skipped--1cYf_ label label-default">Omitido</span>
             <div class="quiz-question--question-prompt--1chsb" id="question-prompt">You want to send customised email to your users. You should use</div>
          </div>
@@ -4792,7 +4792,7 @@
    </div>
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
       <form class="">
-         <div class="quiz-question--header--1W0CB">
+         <div class="question 1W0CB">
             <span>Pregunta 2: </span><span class="quiz-question--skipped--1cYf_ label label-default">Omitido</span>
             <div class="quiz-question--question-prompt--1chsb" id="question-prompt">Which of the following can be used to implement a REST API? (select two)</div>
          </div>
@@ -4878,7 +4878,7 @@
    </div>
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
       <form class="">
-         <div class="quiz-question--header--1W0CB">
+         <div class="question 1W0CB">
             <span>Pregunta 3: </span><span class="quiz-question--skipped--1cYf_ label label-default">Omitido</span>
             <div class="quiz-question--question-prompt--1chsb" id="question-prompt">Your company does not trust Amazon web services for their encryption services, but would like to store data encrypted in Amazon S3. Which method suits best these requirements?</div>
          </div>
@@ -4949,7 +4949,7 @@
    </div>
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
       <form class="">
-         <div class="quiz-question--header--1W0CB">
+         <div class="question 1W0CB">
             <span>Pregunta 4: </span><span class="quiz-question--skipped--1cYf_ label label-default">Omitido</span>
             <div class="quiz-question--question-prompt--1chsb" id="question-prompt">Which of the following statement is correct for CloudFormation?</div>
          </div>
@@ -5020,7 +5020,7 @@
    </div>
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
       <form class="">
-         <div class="quiz-question--header--1W0CB">
+         <div class="question 1W0CB">
             <span>Pregunta 5: </span><span class="quiz-question--skipped--1cYf_ label label-default">Omitido</span>
             <div class="quiz-question--question-prompt--1chsb" id="question-prompt">You would like to build a serverless REST API. Which technology combo will you choose?</div>
          </div>
@@ -5091,7 +5091,7 @@
    </div>
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
       <form class="">
-         <div class="quiz-question--header--1W0CB">
+         <div class="question 1W0CB">
             <span>Pregunta 6: </span><span class="quiz-question--skipped--1cYf_ label label-default">Omitido</span>
             <div class="quiz-question--question-prompt--1chsb" id="question-prompt">Your application load balancer cannot connect to your EC2 instance, it experiences a timeout. What's the problem?</div>
          </div>
@@ -5162,7 +5162,7 @@
    </div>
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
       <form class="">
-         <div class="quiz-question--header--1W0CB">
+         <div class="question 1W0CB">
             <span>Pregunta 7: </span><span class="quiz-question--skipped--1cYf_ label label-default">Omitido</span>
             <div class="quiz-question--question-prompt--1chsb" id="question-prompt">You would like to see a list of the API calls performed by your CodePipeline pipeline. Which service will help you with that?</div>
          </div>
@@ -5233,7 +5233,7 @@
    </div>
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
       <form class="">
-         <div class="quiz-question--header--1W0CB">
+         <div class="question 1W0CB">
             <span>Pregunta 8: </span><span class="quiz-question--skipped--1cYf_ label label-default">Omitido</span>
             <div class="quiz-question--question-prompt--1chsb" id="question-prompt">You need to store data that needs to be available on a tablet, a mobile device and a web application for the same user. Which product allows you to achieve this?</div>
          </div>
@@ -5304,7 +5304,7 @@
    </div>
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
       <form class="">
-         <div class="quiz-question--header--1W0CB">
+         <div class="question 1W0CB">
             <span>Pregunta 9: </span><span class="quiz-question--skipped--1cYf_ label label-default">Omitido</span>
             <div class="quiz-question--question-prompt--1chsb" id="question-prompt">You application is deployed on EC2 and needs to access an internal API through API Gateway. Which authentication method will provide the easiest security?</div>
          </div>
@@ -5361,7 +5361,7 @@
    </div>
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
       <form class="">
-         <div class="quiz-question--header--1W0CB">
+         <div class="question 1W0CB">
             <span>Pregunta 10: </span><span class="quiz-question--skipped--1cYf_ label label-default">Omitido</span>
             <div class="quiz-question--question-prompt--1chsb" id="question-prompt">You want to perform a slow rollout of a new API version using API Gateway. Which feature should you use?</div>
          </div>
@@ -5432,7 +5432,7 @@
    </div>
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
       <form class="">
-         <div class="quiz-question--header--1W0CB">
+         <div class="question 1W0CB">
             <span>Pregunta 11: </span><span class="quiz-question--skipped--1cYf_ label label-default">Omitido</span>
             <div class="quiz-question--question-prompt--1chsb" id="question-prompt">What's the maximum data size that can be encrypted by KMS?</div>
          </div>
@@ -5503,7 +5503,7 @@
    </div>
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
       <form class="">
-         <div class="quiz-question--header--1W0CB">
+         <div class="question 1W0CB">
             <span>Pregunta 12: </span><span class="quiz-question--skipped--1cYf_ label label-default">Omitido</span>
             <div class="quiz-question--question-prompt--1chsb" id="question-prompt">Which of the following is not a valid CloudFormation section?</div>
          </div>
@@ -5574,7 +5574,7 @@
    </div>
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
       <form class="">
-         <div class="quiz-question--header--1W0CB">
+         <div class="question 1W0CB">
             <span>Pregunta 13: </span><span class="quiz-question--skipped--1cYf_ label label-default">Omitido</span>
             <div class="quiz-question--question-prompt--1chsb" id="question-prompt">Which of the following statements isn't true for SNS?</div>
          </div>
@@ -5645,7 +5645,7 @@
    </div>
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
       <form class="">
-         <div class="quiz-question--header--1W0CB">
+         <div class="question 1W0CB">
             <span>Pregunta 14: </span><span class="quiz-question--skipped--1cYf_ label label-default">Omitido</span>
             <div class="quiz-question--question-prompt--1chsb" id="question-prompt">How can you retrieve a nested JSON attribute in your DynamoDB query?</div>
          </div>
@@ -5702,7 +5702,7 @@
    </div>
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
       <form class="">
-         <div class="quiz-question--header--1W0CB">
+         <div class="question 1W0CB">
             <span>Pregunta 15: </span><span class="quiz-question--skipped--1cYf_ label label-default">Omitido</span>
             <div class="quiz-question--question-prompt--1chsb" id="question-prompt">You are hosting a public AWS website on S3 bucket but every user is currently getting a 403 (Forbidden) error. How can you remedy this error?</div>
          </div>
@@ -5773,7 +5773,7 @@
    </div>
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
       <form class="">
-         <div class="quiz-question--header--1W0CB">
+         <div class="question 1W0CB">
             <span>Pregunta 16: </span><span class="quiz-question--skipped--1cYf_ label label-default">Omitido</span>
             <div class="quiz-question--question-prompt--1chsb" id="question-prompt">You have created the S3 bucket named "prod", but the bucket creation failed. You triple checked and you are certain no other bucket in your AWS account exist with the name "prod". What's the most likely reason for this issue?</div>
          </div>
@@ -5844,7 +5844,7 @@
    </div>
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
       <form class="">
-         <div class="quiz-question--header--1W0CB">
+         <div class="question 1W0CB">
             <span>Pregunta 17: </span><span class="quiz-question--skipped--1cYf_ label label-default">Omitido</span>
             <div class="quiz-question--question-prompt--1chsb" id="question-prompt">
                <p>You would like to deploy an application while defining all the database authentication and authorization using IAM policies. Which database will be the best fit?</p>
@@ -5917,7 +5917,7 @@
    </div>
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
       <form class="">
-         <div class="quiz-question--header--1W0CB">
+         <div class="question 1W0CB">
             <span>Pregunta 18: </span><span class="quiz-question--skipped--1cYf_ label label-default">Omitido</span>
             <div class="quiz-question--question-prompt--1chsb" id="question-prompt">You would like to audit the actual usage of your KMS key. Which service can help you achieve that?</div>
          </div>
@@ -5988,7 +5988,7 @@
    </div>
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
       <form class="">
-         <div class="quiz-question--header--1W0CB">
+         <div class="question 1W0CB">
             <span>Pregunta 19: </span><span class="quiz-question--skipped--1cYf_ label label-default">Omitido</span>
             <div class="quiz-question--question-prompt--1chsb" id="question-prompt">All of a sudden, your CodePipeline breaks because it says it cannot find the target Elastic Beanstalk environment to deploy your application to. What should you do to find the root cause of this problem? (select two)</div>
          </div>
@@ -6074,7 +6074,7 @@
    </div>
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
       <form class="">
-         <div class="quiz-question--header--1W0CB">
+         <div class="question 1W0CB">
             <span>Pregunta 20: </span><span class="quiz-question--skipped--1cYf_ label label-default">Omitido</span>
             <div class="quiz-question--question-prompt--1chsb" id="question-prompt">Your instance in us-east-1a just got terminated, and the attached EBS volume is now available. Your colleague tells you he can't seem to attach it to your instance in us-east-1b.</div>
          </div>
@@ -6131,7 +6131,7 @@
    </div>
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
       <form class="">
-         <div class="quiz-question--header--1W0CB">
+         <div class="question 1W0CB">
             <span>Pregunta 21: </span><span class="quiz-question--skipped--1cYf_ label label-default">Omitido</span>
             <div class="quiz-question--question-prompt--1chsb" id="question-prompt">You would like to see the logs of your failed CodeBuilds. How should you do it?</div>
          </div>
@@ -6202,7 +6202,7 @@
    </div>
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
       <form class="">
-         <div class="quiz-question--header--1W0CB">
+         <div class="question 1W0CB">
             <span>Pregunta 22: </span><span class="quiz-question--skipped--1cYf_ label label-default">Omitido</span>
             <div class="quiz-question--question-prompt--1chsb" id="question-prompt">You would like to deploy a database that has the capability to perform joins and fast per-row OLTP processing. Which database technology is best?</div>
          </div>
@@ -6273,7 +6273,7 @@
    </div>
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
       <form class="">
-         <div class="quiz-question--header--1W0CB">
+         <div class="question 1W0CB">
             <span>Pregunta 23: </span><span class="quiz-question--skipped--1cYf_ label label-default">Omitido</span>
             <div class="quiz-question--question-prompt--1chsb" id="question-prompt">You are looking for a pub sub solution where you send messages once and they are received by many different locations. Which technology helps you achieve that?</div>
          </div>
@@ -6344,7 +6344,7 @@
    </div>
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
       <form class="">
-         <div class="quiz-question--header--1W0CB">
+         <div class="question 1W0CB">
             <span>Pregunta 24: </span><span class="quiz-question--skipped--1cYf_ label label-default">Omitido</span>
             <div class="quiz-question--question-prompt--1chsb" id="question-prompt">You have enabled X-Ray integration with AWS lambda but can't see any data go through X-Ray. What's a likely reason of this?</div>
          </div>
@@ -6415,7 +6415,7 @@
    </div>
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
       <form class="">
-         <div class="quiz-question--header--1W0CB">
+         <div class="question 1W0CB">
             <span>Pregunta 25: </span><span class="quiz-question--skipped--1cYf_ label label-default">Omitido</span>
             <div class="quiz-question--question-prompt--1chsb" id="question-prompt">We need to write 6 objects per second of 4.5 KB each in DynamoDB. What's the target WCU?</div>
          </div>
@@ -6486,7 +6486,7 @@
    </div>
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
       <form class="">
-         <div class="quiz-question--header--1W0CB">
+         <div class="question 1W0CB">
             <span>Pregunta 26: </span><span class="quiz-question--skipped--1cYf_ label label-default">Omitido</span>
             <div class="quiz-question--question-prompt--1chsb" id="question-prompt">What is the maximum number of messages than can be stored in a SQS queue?</div>
          </div>
@@ -6557,7 +6557,7 @@
    </div>
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
       <form class="">
-         <div class="quiz-question--header--1W0CB">
+         <div class="question 1W0CB">
             <span>Pregunta 27: </span><span class="quiz-question--skipped--1cYf_ label label-default">Omitido</span>
             <div class="quiz-question--question-prompt--1chsb" id="question-prompt">Your company does want S3 server side encryption but want to be able to provide the encryption key. Which encryption mechanism suits best?</div>
          </div>
@@ -6628,7 +6628,7 @@
    </div>
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
       <form class="">
-         <div class="quiz-question--header--1W0CB">
+         <div class="question 1W0CB">
             <span>Pregunta 28: </span><span class="quiz-question--skipped--1cYf_ label label-default">Omitido</span>
             <div class="quiz-question--question-prompt--1chsb" id="question-prompt">When you rollback a CodeDeploy, where is the application deployed first?</div>
          </div>
@@ -6699,7 +6699,7 @@
    </div>
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
       <form class="">
-         <div class="quiz-question--header--1W0CB">
+         <div class="question 1W0CB">
             <span>Pregunta 29: </span><span class="quiz-question--skipped--1cYf_ label label-default">Omitido</span>
             <div class="quiz-question--question-prompt--1chsb" id="question-prompt">We need to perform 10 strongly consistent reads per second of 6KB each. How many RCU do we need?</div>
          </div>
@@ -6770,7 +6770,7 @@
    </div>
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
       <form class="">
-         <div class="quiz-question--header--1W0CB">
+         <div class="question 1W0CB">
             <span>Pregunta 30: </span><span class="quiz-question--skipped--1cYf_ label label-default">Omitido</span>
             <div class="quiz-question--question-prompt--1chsb" id="question-prompt">You have SSH into your EC2 instance. How can you check if it can terminate other EC2 instances without actually terminating them?</div>
          </div>
@@ -6841,7 +6841,7 @@
    </div>
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
       <form class="">
-         <div class="quiz-question--header--1W0CB">
+         <div class="question 1W0CB">
             <span>Pregunta 31: </span><span class="quiz-question--skipped--1cYf_ label label-default">Omitido</span>
             <div class="quiz-question--question-prompt--1chsb" id="question-prompt">Which key does allow you to expose outputs to other CloudFormation stacks?</div>
          </div>
@@ -6912,7 +6912,7 @@
    </div>
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
       <form class="">
-         <div class="quiz-question--header--1W0CB">
+         <div class="question 1W0CB">
             <span>Pregunta 32: </span><span class="quiz-question--skipped--1cYf_ label label-default">Omitido</span>
             <div class="quiz-question--question-prompt--1chsb" id="question-prompt">What isn't a target sink for Kinesis Firehose?</div>
          </div>
@@ -6983,7 +6983,7 @@
    </div>
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
       <form class="">
-         <div class="quiz-question--header--1W0CB">
+         <div class="question 1W0CB">
             <span>Pregunta 33: </span><span class="quiz-question--skipped--1cYf_ label label-default">Omitido</span>
             <div class="quiz-question--question-prompt--1chsb" id="question-prompt">
                <p>You would like to control Elastic Beanstalk configuration dynamically using configuration files. How can you achieve that?</p>
@@ -7056,7 +7056,7 @@
    </div>
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
       <form class="">
-         <div class="quiz-question--header--1W0CB">
+         <div class="question 1W0CB">
             <span>Pregunta 34: </span><span class="quiz-question--skipped--1cYf_ label label-default">Omitido</span>
             <div class="quiz-question--question-prompt--1chsb" id="question-prompt">You would like to pass 1 MB of encrypted data to your AWS Lambda function, that it needs to load before properly functioning. Which method will work best?</div>
          </div>
@@ -7129,7 +7129,7 @@
    </div>
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
       <form class="">
-         <div class="quiz-question--header--1W0CB">
+         <div class="question 1W0CB">
             <span>Pregunta 35: </span><span class="quiz-question--skipped--1cYf_ label label-default">Omitido</span>
             <div class="quiz-question--question-prompt--1chsb" id="question-prompt">Which of the following is not a valid CloudFormation Parameter Type?</div>
          </div>
@@ -7200,7 +7200,7 @@
    </div>
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
       <form class="">
-         <div class="quiz-question--header--1W0CB">
+         <div class="question 1W0CB">
             <span>Pregunta 36: </span><span class="quiz-question--skipped--1cYf_ label label-default">Omitido</span>
             <div class="quiz-question--question-prompt--1chsb" id="question-prompt">Which of the following services will not help you in understanding an authorization exception that happened when you ran a CLI command?</div>
          </div>
@@ -7271,7 +7271,7 @@
    </div>
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
       <form class="">
-         <div class="quiz-question--header--1W0CB">
+         <div class="question 1W0CB">
             <span>Pregunta 37: </span><span class="quiz-question--skipped--1cYf_ label label-default">Omitido</span>
             <div class="quiz-question--question-prompt--1chsb" id="question-prompt">I have an ASG and an ALB, and I setup my ASG to get health status of instances thanks to my ALB. One instance has just been reported unhealthy. What will happen?</div>
          </div>
@@ -7328,7 +7328,7 @@
    </div>
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
       <form class="">
-         <div class="quiz-question--header--1W0CB">
+         <div class="question 1W0CB">
             <span>Pregunta 38: </span><span class="quiz-question--skipped--1cYf_ label label-default">Omitido</span>
             <div class="quiz-question--question-prompt--1chsb" id="question-prompt">
                <p>You have an S3 bucket and have enabled s3 access logging on a small bucket of 100MB. Three days later, you log back in and see that your bucket has grown to 100GB of size! No new files were added by users onto the bucket and the access pattern were normal. What could be the reason?</p>
@@ -7409,7 +7409,7 @@
    </div>
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
       <form class="">
-         <div class="quiz-question--header--1W0CB">
+         <div class="question 1W0CB">
             <span>Pregunta 39: </span><span class="quiz-question--skipped--1cYf_ label label-default">Omitido</span>
             <div class="quiz-question--question-prompt--1chsb" id="question-prompt">You have performed changes in your API gateway and these changes are not active. What should you do?</div>
          </div>
@@ -7480,7 +7480,7 @@
    </div>
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
       <form class="">
-         <div class="quiz-question--header--1W0CB">
+         <div class="question 1W0CB">
             <span>Pregunta 40: </span><span class="quiz-question--skipped--1cYf_ label label-default">Omitido</span>
             <div class="quiz-question--question-prompt--1chsb" id="question-prompt">Which function should you use to reference a CloudFormation parameter?</div>
          </div>
@@ -7551,7 +7551,7 @@
    </div>
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
       <form class="">
-         <div class="quiz-question--header--1W0CB">
+         <div class="question 1W0CB">
             <span>Pregunta 41: </span><span class="quiz-question--skipped--1cYf_ label label-default">Omitido</span>
             <div class="quiz-question--question-prompt--1chsb" id="question-prompt">You would like to use a service to create virtual machines in the cloud, and being able to fully control them in order to run your database software. Which service would you choose?</div>
          </div>
@@ -7622,7 +7622,7 @@
    </div>
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
       <form class="">
-         <div class="quiz-question--header--1W0CB">
+         <div class="question 1W0CB">
             <span>Pregunta 42: </span><span class="quiz-question--skipped--1cYf_ label label-default">Omitido</span>
             <div class="quiz-question--question-prompt--1chsb" id="question-prompt">Which ECS config must you enable to allow your ECS tasks to endorse IAM roles?</div>
          </div>
@@ -7693,7 +7693,7 @@
    </div>
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
       <form class="">
-         <div class="quiz-question--header--1W0CB">
+         <div class="question 1W0CB">
             <span>Pregunta 43: </span><span class="quiz-question--skipped--1cYf_ label label-default">Omitido</span>
             <div class="quiz-question--question-prompt--1chsb" id="question-prompt">Your application is using an Application Load Balancer. It turns out your application only sees traffic coming from private IP which are in fact your load balancer's. What should you do to find the true IP of the clients connected to your website?</div>
          </div>
@@ -7750,7 +7750,7 @@
    </div>
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
       <form class="">
-         <div class="quiz-question--header--1W0CB">
+         <div class="question 1W0CB">
             <span>Pregunta 44: </span><span class="quiz-question--skipped--1cYf_ label label-default">Omitido</span>
             <div class="quiz-question--question-prompt--1chsb" id="question-prompt">You want to have full control over the deployment of your Elastic Beanstalk application and control the portion of the traffic that will go to your new application version, so that you can perform extended testing. When the time is right, you want a simple way to switch the environment for the end users. Which deployment mechanism fits best?</div>
          </div>
@@ -7835,7 +7835,7 @@
    </div>
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
       <form class="">
-         <div class="quiz-question--header--1W0CB">
+         <div class="question 1W0CB">
             <span>Pregunta 45: </span><span class="quiz-question--skipped--1cYf_ label label-default">Omitido</span>
             <div class="quiz-question--question-prompt--1chsb" id="question-prompt">You would like to persist data of your EC2 instances so that the data can be detached and mounted to other instances if need be. Which technology should you choose?</div>
          </div>
@@ -7906,7 +7906,7 @@
    </div>
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
       <form class="">
-         <div class="quiz-question--header--1W0CB">
+         <div class="question 1W0CB">
             <span>Pregunta 46: </span><span class="quiz-question--skipped--1cYf_ label label-default">Omitido</span>
             <div class="quiz-question--question-prompt--1chsb" id="question-prompt">Each ECS Task must have an IAM policy attached to it. How do you achieve that?</div>
          </div>
@@ -7977,7 +7977,7 @@
    </div>
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
       <form class="">
-         <div class="quiz-question--header--1W0CB">
+         <div class="question 1W0CB">
             <span>Pregunta 47: </span><span class="quiz-question--skipped--1cYf_ label label-default">Omitido</span>
             <div class="quiz-question--question-prompt--1chsb" id="question-prompt">How can you easily encrypt your build artifacts coming out of CodeBuild?</div>
          </div>
@@ -8048,7 +8048,7 @@
    </div>
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
       <form class="">
-         <div class="quiz-question--header--1W0CB">
+         <div class="question 1W0CB">
             <span>Pregunta 48: </span><span class="quiz-question--skipped--1cYf_ label label-default">Omitido</span>
             <div class="quiz-question--question-prompt--1chsb" id="question-prompt">You would like to add hooks to your AWS CodeDeploy deployment. How can you achieve that?</div>
          </div>
@@ -8119,7 +8119,7 @@
    </div>
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
       <form class="">
-         <div class="quiz-question--header--1W0CB">
+         <div class="question 1W0CB">
             <span>Pregunta 49: </span><span class="quiz-question--skipped--1cYf_ label label-default">Omitido</span>
             <div class="quiz-question--question-prompt--1chsb" id="question-prompt">Do you have to provision EC2 instances in order for CodePipeline to be able to run?</div>
          </div>
@@ -8162,7 +8162,7 @@
    </div>
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
       <form class="">
-         <div class="quiz-question--header--1W0CB">
+         <div class="question 1W0CB">
             <span>Pregunta 50: </span><span class="quiz-question--skipped--1cYf_ label label-default">Omitido</span>
             <div class="quiz-question--question-prompt--1chsb" id="question-prompt">You would like each of your API Gateway stages (dev, test, prod) to point to a specific Lambda function version. Which mechanism would you need to use? (select two)</div>
          </div>
@@ -8248,7 +8248,7 @@
    </div>
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
       <form class="">
-         <div class="quiz-question--header--1W0CB">
+         <div class="question 1W0CB">
             <span>Pregunta 51: </span><span class="quiz-question--skipped--1cYf_ label label-default">Omitido</span>
             <div class="quiz-question--question-prompt--1chsb" id="question-prompt">Which hook step should be used in appspec.yml file to ensure the application is properly running after being deployed?</div>
          </div>
@@ -8319,7 +8319,7 @@
    </div>
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
       <form class="">
-         <div class="quiz-question--header--1W0CB">
+         <div class="question 1W0CB">
             <span>Pregunta 52: </span><span class="quiz-question--skipped--1cYf_ label label-default">Omitido</span>
             <div class="quiz-question--question-prompt--1chsb" id="question-prompt">What do you need to do to ensure your Kinesis Stream can scale? (select two)</div>
          </div>
@@ -8391,7 +8391,7 @@
    </div>
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
       <form class="">
-         <div class="quiz-question--header--1W0CB">
+         <div class="question 1W0CB">
             <span>Pregunta 53: </span><span class="quiz-question--skipped--1cYf_ label label-default">Omitido</span>
             <div class="quiz-question--question-prompt--1chsb" id="question-prompt">You are trying to upload an object of 500GB of size, but the upload is failing with an error message indicating the file is too big. What's the problem?</div>
          </div>
@@ -8462,7 +8462,7 @@
    </div>
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
       <form class="">
-         <div class="quiz-question--header--1W0CB">
+         <div class="question 1W0CB">
             <span>Pregunta 54: </span><span class="quiz-question--skipped--1cYf_ label label-default">Omitido</span>
             <div class="quiz-question--question-prompt--1chsb" id="question-prompt">Which of these RDS features will force your developers to change their application code to fully take advantage of it?</div>
          </div>
@@ -8533,7 +8533,7 @@
    </div>
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
       <form class="">
-         <div class="quiz-question--header--1W0CB">
+         <div class="question 1W0CB">
             <span>Pregunta 55: </span><span class="quiz-question--skipped--1cYf_ label label-default">Omitido</span>
             <div class="quiz-question--question-prompt--1chsb" id="question-prompt">You are currently storing 500 GB of data on your S3 bucket "my-corp". What's the maximum total volume of data that your S3 bucket can contain?</div>
          </div>
@@ -8604,7 +8604,7 @@
    </div>
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
       <form class="">
-         <div class="quiz-question--header--1W0CB">
+         <div class="question 1W0CB">
             <span>Pregunta 56: </span><span class="quiz-question--skipped--1cYf_ label label-default">Omitido</span>
             <div class="quiz-question--question-prompt--1chsb" id="question-prompt">Your application deployed to Elastic Beanstalk from CodePipeline (CodeCommit =&gt; CodeBuild) takes a very long time to be deployed due to the fact it has to resolve many dependencies on each of your 100 target EC2 instances. What do you suggest to improve the performance while having the minimal amount of code and developer impact?</div>
          </div>
@@ -8675,7 +8675,7 @@
    </div>
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
       <form class="">
-         <div class="quiz-question--header--1W0CB">
+         <div class="question 1W0CB">
             <span>Pregunta 57: </span><span class="quiz-question--skipped--1cYf_ label label-default">Omitido</span>
             <div class="quiz-question--question-prompt--1chsb" id="question-prompt">You would like to improve the CPU and network performance of your Lambda functions without changing your code. How should you do it?</div>
          </div>
@@ -8746,7 +8746,7 @@
    </div>
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
       <form class="">
-         <div class="quiz-question--header--1W0CB">
+         <div class="question 1W0CB">
             <span>Pregunta 58: </span><span class="quiz-question--skipped--1cYf_ label label-default">Omitido</span>
             <div class="quiz-question--question-prompt--1chsb" id="question-prompt">A CloudFormation stack name must be unique across  ?</div>
          </div>
@@ -8817,7 +8817,7 @@
    </div>
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
       <form class="">
-         <div class="quiz-question--header--1W0CB">
+         <div class="question 1W0CB">
             <span>Pregunta 59: </span><span class="quiz-question--skipped--1cYf_ label label-default">Omitido</span>
             <div class="quiz-question--question-prompt--1chsb" id="question-prompt">
                <p>You have a deployed a Lambda function written in Golang that has loaded the X-Ray SDK. The IAM permissions of the Lambda function do allow you to send data to X-Ray. But things still don't work, what's a likely source of the problem?</p>
@@ -8890,7 +8890,7 @@
    </div>
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
       <form class="">
-         <div class="quiz-question--header--1W0CB">
+         <div class="question 1W0CB">
             <span>Pregunta 60: </span><span class="quiz-question--skipped--1cYf_ label label-default">Omitido</span>
             <div class="quiz-question--question-prompt--1chsb" id="question-prompt">Where must CloudFormation templates be stored in order to be loaded by CloudFormation?</div>
          </div>
@@ -8961,7 +8961,7 @@
    </div>
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
       <form class="">
-         <div class="quiz-question--header--1W0CB">
+         <div class="question 1W0CB">
             <span>Pregunta 61: </span><span class="quiz-question--skipped--1cYf_ label label-default">Omitido</span>
             <div class="quiz-question--question-prompt--1chsb" id="question-prompt">You have a micro service architecture and find it hard to debug which microservice is failing when requests are done in your AWS infrastructure. Which service can help remedy the situation?</div>
          </div>
@@ -9032,7 +9032,7 @@
    </div>
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
       <form class="">
-         <div class="quiz-question--header--1W0CB">
+         <div class="question 1W0CB">
             <span>Pregunta 62: </span><span class="quiz-question--skipped--1cYf_ label label-default">Omitido</span>
             <div class="quiz-question--question-prompt--1chsb" id="question-prompt">While you send messages one by one to Kinesis Stream, you are getting a ProvisionedThroughputException. How can you improve the situation while keeping cost constant? (select two)</div>
          </div>
@@ -9104,7 +9104,7 @@
    </div>
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
       <form class="">
-         <div class="quiz-question--header--1W0CB">
+         <div class="question 1W0CB">
             <span>Pregunta 63: </span><span class="quiz-question--skipped--1cYf_ label label-default">Omitido</span>
             <div class="quiz-question--question-prompt--1chsb" id="question-prompt">In CloudFormation, Stack-A exports some outputs that are referenced by Stack-B and Stack-C. In which order should you delete the stacks?</div>
          </div>
@@ -9175,7 +9175,7 @@
    </div>
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
       <form class="">
-         <div class="quiz-question--header--1W0CB">
+         <div class="question 1W0CB">
             <span>Pregunta 64: </span><span class="quiz-question--skipped--1cYf_ label label-default">Omitido</span>
             <div class="quiz-question--question-prompt--1chsb" id="question-prompt">What's the best practice regarding accessing the AWS Root account?</div>
          </div>
@@ -9246,7 +9246,7 @@
    </div>
    <div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
       <form class="">
-         <div class="quiz-question--header--1W0CB">
+         <div class="question 1W0CB">
             <span>Pregunta 65: </span><span class="quiz-question--skipped--1cYf_ label label-default">Omitido</span>
             <div class="quiz-question--question-prompt--1chsb" id="question-prompt">What security mechanisms are available out of the box and require no code change for Kinesis Streams? (select two)</div>
          </div>

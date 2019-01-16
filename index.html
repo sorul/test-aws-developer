@@ -4,7 +4,7 @@
 
 </head>
 <body>
-vvv
+wwwwww
 <script> 
 	$(function(){
 		var tabla = [] // [pregunta, [r1,r2,r3], explicacion]
@@ -19,7 +19,7 @@ vvv
 			var LIrespuestas = $(ULrespuestas[i]).find("li");
 			for(var j=0; j<LIrespuestas.length; j++){
 				var divRespuesta = $(LIrespuestas[j]).find("div.fx div.fx div");
-				if(divRespuesta.next!=0){ //Respuesta correcta
+				if(divRespuesta.next().length!=0){ //Respuesta correcta
 					var respuesta = "<div style='color:green'>"+divRespuesta[0].innerHTML+"</div>";
 				}else{ //Respuesta incorrecta
 					var respuesta = "<div>"+divRespuesta[0].innerHTML+"</div>";
@@ -30,10 +30,9 @@ vvv
 			
 		}
 		
-		console.log("B");
 		var explicaciones = $("h4");
 		for(var i=0; i<explicaciones.length; i++){
-			tabla[i].push(explicaciones[i]);
+			tabla[i].push(explicaciones[i].innerHTML);
 		}
 		console.log(tabla);
 	  

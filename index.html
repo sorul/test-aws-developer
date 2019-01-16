@@ -45,8 +45,9 @@
 		}
 		var indicesAleatorios = [...Array(tabla.length-1).keys()].sort(function() {return Math.random() - 0.5});
 		var indiceActual = 0;
-		
+		pintarPregunta(tabla[indiceActual++]);
 		$("button").click(function(){
+			$("pregunta").empty();
 			pintarPregunta(tabla[indiceActual++]);
 		});
 	});

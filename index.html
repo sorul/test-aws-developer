@@ -4,7 +4,7 @@
 
 </head>
 <body>
-uuuu
+vvv
 <script> 
 	$(function(){
 		var tabla = [] // [pregunta, [r1,r2,r3], explicacion]
@@ -12,17 +12,13 @@ uuuu
 		for(var i=0; i<preguntas.length; i++){
 			tabla.push([preguntas[i].innerHTML,[]]);
 		}
+		
 		var ULrespuestas = $("form ul");
 		var cont = 0;
 		for(var i=0; i<ULrespuestas.length; i++){
-		
 			var LIrespuestas = $(ULrespuestas[i]).find("li");
-			console.log("a"+LIrespuestas.length);
-			
 			for(var j=0; j<LIrespuestas.length; j++){
 				var divRespuesta = $(LIrespuestas[j]).find("div.fx div.fx div");
-				console.log(divRespuesta);
-				
 				if(divRespuesta.next!=0){ //Respuesta correcta
 					var respuesta = "<div style='color:green'>"+divRespuesta[0].innerHTML+"</div>";
 				}else{ //Respuesta incorrecta
@@ -39,7 +35,7 @@ uuuu
 		for(var i=0; i<explicaciones.length; i++){
 			tabla[i].push(explicaciones[i]);
 		}
-		//console.log(tabla);
+		console.log(tabla);
 	  
 	});
 </script>

@@ -17,7 +17,7 @@
 	}
 	$(function(){
 		var tabla = [] // [pregunta, [r1,r2,r3], explicacion]
-		var preguntas = $(".quiz-question--header--hkqKL div");
+		var preguntas = $("form div:first div");
 		for(var i=0; i<preguntas.length; i++){
 			tabla.push([preguntas[i].innerHTML,[]]);
 		}

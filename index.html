@@ -45,8 +45,9 @@ li{
 	function pintarPregunta(pregunta){
 		$("#pregunta").append("<h1>"+pregunta[0]+"</h1>");
 		$("#pregunta").append("<ul>");
-		for(var i=0; i<pregunta[1].length; i++){
-			$("#pregunta").append("<li>"+pregunta[1][i]+"</li>");
+		var respuestas = pregunta[1].sort(function() {return Math.random() - 0.5})
+		for(var i=0; i<respuestas.length; i++){
+			$("#pregunta").append("<li>"+respuestas[i]+"</li>");
 		}
 		$("#pregunta").append("</ul></br>");
 		$("#pregunta").append("<strong>"+pregunta[2]+"</strong>");

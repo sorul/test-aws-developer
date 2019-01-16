@@ -7,12 +7,11 @@
 <script>
 
 	function pintarPregunta(pregunta){
-	console.log(pregunta)
-		$("#pregunta").append("<tr>"+pregunta[0]+"</tr>");
+		$("#pregunta").append(pregunta[0]);
 		for(var i=0; i<pregunta[1].length; i++){
-			$("#pregunta").append("<tr>"+pregunta[1][i]+"</tr>");
+			$("#pregunta").append(pregunta[1][i]);
 		}
-		$("#pregunta").append("<tr>"+pregunta[2]+"</tr>");
+		$("#pregunta").append(pregunta[2]);
 		console.log("hola");
 	}
 	$(function(){
@@ -49,7 +48,7 @@
 	});
 </script>
 
-<table><tbody id="pregunta"></tbody></table>
+<div id="pregunta"></div>
 
 
 

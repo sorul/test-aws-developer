@@ -33,6 +33,10 @@ button:focus {
 button:active {
     transform: scale(0.99);
 }
+li{
+    font-size: larger;
+
+}
 </style>
 </head>
 <body>
@@ -42,7 +46,7 @@ button:active {
 		$("#pregunta").append("<h1>"+pregunta[0]+"</h1>");
 		$("#pregunta").append("<ul>");
 		for(var i=0; i<pregunta[1].length; i++){
-			$("#pregunta").append("<li><h4>"+pregunta[1][i]+"</h4></li>");
+			$("#pregunta").append("<li>"+pregunta[1][i]+"</li>");
 		}
 		$("#pregunta").append("</ul></br>");
 		$("#pregunta").append("<strong>"+pregunta[2]+"</strong>");

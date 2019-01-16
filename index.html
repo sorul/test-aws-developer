@@ -45,15 +45,16 @@
 		}
 		var indicesAleatorios = [...Array(tabla.length-1).keys()].sort(function() {return Math.random() - 0.5});
 		var indiceActual = 0;
-		pintarPregunta(tabla[indiceActual++]);
+		pintarPregunta(tabla[indicesAleatorios[indiceActual++]]);
 		$("button").click(function(){
-			$("pregunta").empty();
-			pintarPregunta(tabla[indiceActual++]);
+			$("#pregunta").empty();
+			pintarPregunta(tabla[indicesAleatorios[indiceActual++]]);
 		});
 	});
 </script>
-<button>Siguiente</button>
 
+
+<button>Siguiente</button>
 <div id="pregunta"></div>
 
 

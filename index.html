@@ -12,8 +12,8 @@
 		for(var i=0; i<pregunta[1].length; i++){
 			$("#pregunta").append("<li>"+pregunta[1][i]+"</li>");
 		}
-		$("#pregunta").append("</ul>");
-		$("#pregunta").append("<bold>"+pregunta[2]+"</bold>");
+		$("#pregunta").append("</ul></br>");
+		$("#pregunta").append("<strong>"+pregunta[2]+"</strong>");
 	}
 	$(function(){
 		var tabla = [] // [pregunta, [r1,r2,r3], explicacion]
@@ -29,7 +29,7 @@
 			for(var j=0; j<LIrespuestas.length; j++){
 				var divRespuesta = $(LIrespuestas[j]).find("div.fx div.fx");
 				if(divRespuesta.next().length!=0){ //Respuesta correcta
-					var respuesta = "<span style='color:green'>"+divRespuesta.children()[0].innerHTML+"</span>";
+					var respuesta = "<span id='correcta'>"+divRespuesta.children()[0].innerHTML+"</span>";
 				}else{ //Respuesta incorrecta
 					var respuesta = "<span>"+divRespuesta.children()[0].innerHTML+"</span>";
 				}
@@ -41,20 +41,25 @@
 		
 		var explicaciones = $("h4");
 		for(var i=0; i<explicaciones.length; i++){
-			tabla[i].push($(explicaciones[0]).next()[0].innerHTML);
+			tabla[i].push("<span id='explicacion' style='display:none'>"+$(explicaciones[0]).next()[0].innerHTML+"<span>");
 		}
 		var indicesAleatorios = [...Array(tabla.length-1).keys()].sort(function() {return Math.random() - 0.5});
 		var indiceActual = 0;
 		pintarPregunta(tabla[indicesAleatorios[indiceActual++]]);
-		$("button").click(function(){
+		$("#siguiente").click(function(){
 			$("#pregunta").empty();
 			pintarPregunta(tabla[indicesAleatorios[indiceActual++]]);
+		});
+		$("#respuesta").click(function(){
+			$("#correcta").css("color","green");
+			$("#explicacion").css("display","");
 		});
 	});
 </script>
 
 
-<button>Siguiente</button>
+<button id='siguiente'>Siguiente</button>
+<button id='respuesta'>Respuesta</button>
 <div id="pregunta"></div>
 
 

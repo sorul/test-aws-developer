@@ -79,7 +79,7 @@ li{
 		
 		var explicaciones = $("h4");
 		for(var i=0; i<explicaciones.length; i++){
-			tabla[i].push("<span id='explicacion' style='display:none'>"+$(explicaciones[0]).next()[0].innerHTML+"<span>");
+			tabla[i].push("<span id='explicacion' style='display:none'>"+$(explicaciones[i]).next()[0].innerHTML+"<span>");
 		}
 		console.log(tabla);
 		var indicesAleatorios = [...Array(tabla.length-1).keys()].sort(function() {return Math.random() - 0.5});

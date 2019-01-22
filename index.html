@@ -87,6 +87,7 @@ li{
 		var indicesAleatorios = [...Array(tabla.length-1).keys()].sort(function() {return Math.random() - 0.5});
 		var indiceActual = 0;
 		pintarPregunta(tabla[indicesAleatorios[indiceActual++]]);
+		$("#totalPreguntas").text(indicesAleatorios.length);
 		$("#siguiente").click(function(){
 			$("#pregunta").empty();
 			pintarPregunta(tabla[indicesAleatorios[indiceActual++]]);
@@ -103,8 +104,8 @@ li{
 <button id='siguiente' style='background: #0069ed;'>Siguiente</button>
 </br></br>
 <button id='respuesta' style='background: #00e400;'>Respuesta</button>
-<div id="pregunta"></div>
-<center><span id="contador"></span></center>
+<div id="pregunta"></div><br/><br/>
+<center>Pregunta <span id="contador"></span>/<span id="totalPreguntas"></span></center>
 
 
 

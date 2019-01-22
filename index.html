@@ -67,7 +67,7 @@ li{
 			for(var j=0; j<LIrespuestas.length; j++){
 				var divRespuesta = $(LIrespuestas[j]).find("div.fx div.fx");
 				if(divRespuesta.next().length!=0){ //Respuesta correcta
-					var respuesta = "<span id='correcta'>"+divRespuesta.children()[0].innerHTML+"</span>";
+					var respuesta = "<span class='correcta'>"+divRespuesta.children()[0].innerHTML+"</span>";
 				}else{ //Respuesta incorrecta
 					var respuesta = "<span>"+divRespuesta.children()[0].innerHTML+"</span>";
 				}
@@ -90,7 +90,7 @@ li{
 			pintarPregunta(tabla[indicesAleatorios[indiceActual++]]);
 		});
 		$("#respuesta").click(function(){
-			$("#correcta").css("color","#00e400");
+			$(".correcta").css("color","#00e400");
 			$("#explicacion").css("display","");
 		});
 	});

@@ -44,7 +44,7 @@ visibility:hidden;
 </head>
 <body>
 <script>
-
+	//FUNCIONES
 	function pintarPregunta(pregunta){
 		$("#pregunta").append("<h1>"+pregunta[0]+"</h1>");
 		$("#pregunta").append("<ul>");
@@ -55,15 +55,22 @@ visibility:hidden;
 		$("#pregunta").append("</ul></br>");
 		$("#pregunta").append("<strong>"+pregunta[2]+"</strong>");
 	}
+	//MAIN
 	$(function(){
+		//Matriz con todas las preguntas
+		var tabla = [] // [pregunta, [r1,r2,r3], explicacion]
+		
+		//Contador de preguntas
 		var contadorPreguntas = 1;
 		$("#contador").text(contadorPreguntas);
-		var tabla = [] // [pregunta, [r1,r2,r3], explicacion]
+		
+		//Extraemos todas las preguntas para guardarlas en la matriz
 		var preguntas = $("form .question div");
 		for(var i=0; i<preguntas.length; i++){
 			tabla.push([preguntas[i].innerHTML,[]]);
 		}
 		
+		//Extraemos todas las respuestas para guardarlas en la matriz
 		var ULrespuestas = $("form ul");
 		var cont = 0;
 		console.log(tabla.length +" : "+ULrespuestas.length);
@@ -82,15 +89,23 @@ visibility:hidden;
 			
 		}
 		
+		//Extraemos todas las explicaciones para guardarlas en la matriz
 		var explicaciones = $("h4");
 		for(var i=0; i<explicaciones.length; i++){
 			tabla[i].push("<span id='explicacion' style='display:none'>"+$(explicaciones[i]).next()[0].innerHTML+"<span>");
 		}
-		console.log(tabla);
+		
+		//Creamos un array de indices [0,nº de preguntas] aleatorios
 		var indicesAleatorios = [...Array(tabla.length).keys()].sort(function() {return Math.random() - 0.5});
 		var indiceActual = 0;
+		
+		//Pintamos la primera pregunta
 		pintarPregunta(tabla[indicesAleatorios[indiceActual++]]);
+		
+		//Escribimos el contador a 1
 		$("#totalPreguntas").text(indicesAleatorios.length);
+		
+		//Eventos de ratón
 		$("#siguiente").click(function(){
 			$("#pregunta").empty();
 			pintarPregunta(tabla[indicesAleatorios[indiceActual++]]);

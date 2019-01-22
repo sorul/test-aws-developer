@@ -53,6 +53,8 @@ li{
 		$("#pregunta").append("<strong>"+pregunta[2]+"</strong>");
 	}
 	$(function(){
+		var contadorPreguntas = 1;
+		$("#contador").text(contadorPreguntas);
 		var tabla = [] // [pregunta, [r1,r2,r3], explicacion]
 		var preguntas = $("form .question div");
 		for(var i=0; i<preguntas.length; i++){
@@ -88,6 +90,7 @@ li{
 		$("#siguiente").click(function(){
 			$("#pregunta").empty();
 			pintarPregunta(tabla[indicesAleatorios[indiceActual++]]);
+			$("#contador").text(++contadorPreguntas);
 		});
 		$("#respuesta").click(function(){
 			$(".correcta").css("color","#00e400");
@@ -101,6 +104,7 @@ li{
 </br></br>
 <button id='respuesta' style='background: #00e400;'>Respuesta</button>
 <div id="pregunta"></div>
+<center><span id="contador"></span></center>
 
 
 

@@ -87,7 +87,7 @@ visibility:hidden;
 			tabla[i].push("<span id='explicacion' style='display:none'>"+$(explicaciones[i]).next()[0].innerHTML+"<span>");
 		}
 		console.log(tabla);
-		var indicesAleatorios = [...Array(tabla.length-1).keys()].sort(function() {return Math.random() - 0.5});
+		var indicesAleatorios = [...Array(tabla.length).keys()].sort(function() {return Math.random() - 0.5});
 		var indiceActual = 0;
 		pintarPregunta(tabla[indicesAleatorios[indiceActual++]]);
 		$("#totalPreguntas").text(indicesAleatorios.length);

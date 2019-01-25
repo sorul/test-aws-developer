@@ -97,10 +97,10 @@ visibility:hidden;
 		
 		//Creamos un array de indices [0,nº de preguntas] aleatorios
 		var indicesAleatorios = [...Array(tabla.length).keys()].sort(function() {return Math.random() - 0.5});
-		var indiceActual = 0;
+		var indiceActual = -1;
 		
 		//Pintamos la primera pregunta
-		pintarPregunta(tabla[indicesAleatorios[indiceActual++]]);
+		pintarPregunta(tabla[indicesAleatorios[++indiceActual]]);
 		
 		//Escribimos el contador a 1
 		$("#totalPreguntas").text(indicesAleatorios.length);
@@ -108,12 +108,44 @@ visibility:hidden;
 		//Eventos de ratón
 		$("#siguiente").click(function(){
 			$("#pregunta").empty();
-			pintarPregunta(tabla[indicesAleatorios[indiceActual++]]);
+			pintarPregunta(tabla[indicesAleatorios[++indiceActual]]);
 			$("#contador").text(++contadorPreguntas);
 		});
 		$("#respuesta").click(function(){
 			$(".correcta").css("color","#00e400");
 			$("#explicacion").css("display","");
+		});	
+		$(document).keydown(function(e) {
+			switch(e.which) {
+				case 37: // left
+					if(indiceActual>0){
+						$("#pregunta").empty();
+						indiceActual -= 1
+						pintarPregunta(tabla[indicesAleatorios[indiceActual]]);
+						$("#contador").text(--contadorPreguntas);
+					}
+					break;
+
+				case 38: // up
+					break;
+
+				case 39: // right
+					$("#pregunta").empty();
+					pintarPregunta(tabla[indicesAleatorios[++indiceActual]]);
+					$("#contador").text(++contadorPreguntas);
+					break;
+
+				case 40: // down
+					break;
+					
+				case 32: // down
+					$(".correcta").css("color","#00e400");
+					$("#explicacion").css("display","");
+					break;
+
+				default: return; // exit this handler for other keys
+			}
+			e.preventDefault(); // prevent the default action (scroll / move caret)
 		});
 	});
 </script>

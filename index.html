@@ -106,11 +106,11 @@ display:inline;
 		}
 		
 		if(contadorPreguntas!=1){
-			//Creamos un array de indices [0,nº de preguntas] aleatorios
-			var indices = [...Array(tabla.length).keys()].sort(function() {return Math.random() - 0.5});
-		}else{
 			//El array de indices no será aleatorio
 			var indices = [...Array(tabla.length).keys()]
+		}else{
+			//Creamos un array de indices [0,nº de preguntas] aleatorios
+			var indices = [...Array(tabla.length).keys()].sort(function() {return Math.random() - 0.5});
 		}
 		
 		console.log(indices);

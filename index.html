@@ -66,6 +66,11 @@ display:inline;
 		
 		//Contador de preguntas
 		var contadorPreguntas = 1;
+		var href = String(window.location.href);
+		console.log(href);
+		if(href.includes("?")){
+			contadorPreguntas = parseInt(href.split("?")[1])
+		}
 		$("#contador").text(contadorPreguntas);
 		
 		//Extraemos todas las preguntas para guardarlas en la matriz

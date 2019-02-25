@@ -105,19 +105,29 @@ display:inline;
 			tabla[i].push("<span id='explicacion' style='display:none'>"+$(explicaciones[i]).next()[0].innerHTML+"<span>");
 		}
 		
-		//Creamos un array de indices [0,nº de preguntas] aleatorios
-		var indicesAleatorios = [...Array(tabla.length).keys()].sort(function() {return Math.random() - 0.5});
+		if(contadorPreguntas!=1){
+			//Creamos un array de indices [0,nº de preguntas] aleatorios
+			var indices = [...Array(tabla.length).keys()].sort(function() {return Math.random() - 0.5});
+		}else{
+			//El array de indices no será aleatorio
+			var indices = [...Array(tabla.length).keys()]
+		}
+		
+		console.log(indices);
+		console.log(contadorPreguntas);
+		console.log(indiceActual);
+		
 		
 		//Pintamos la primera pregunta
-		pintarPregunta(tabla[indicesAleatorios[++indiceActual]]);
+		pintarPregunta(tabla[indices[++indiceActual]]);
 		
 		//Escribimos el contador a 1
-		$("#totalPreguntas").text(indicesAleatorios.length);
+		$("#totalPreguntas").text(indices.length);
 		
 		//Eventos de ratón
 		$("#siguiente").click(function(){
 			$("#pregunta").empty();
-			pintarPregunta(tabla[indicesAleatorios[++indiceActual]]);
+			pintarPregunta(tabla[indices[++indiceActual]]);
 			$("#contador").text(++contadorPreguntas);
 		});
 		$("#respuesta").click(function(){
@@ -130,7 +140,7 @@ display:inline;
 					if(indiceActual>0){
 						$("#pregunta").empty();
 						indiceActual -= 1
-						pintarPregunta(tabla[indicesAleatorios[indiceActual]]);
+						pintarPregunta(tabla[indices[indiceActual]]);
 						$("#contador").text(--contadorPreguntas);
 					}
 					break;
@@ -140,7 +150,7 @@ display:inline;
 
 				case 39: // right
 					$("#pregunta").empty();
-					pintarPregunta(tabla[indicesAleatorios[++indiceActual]]);
+					pintarPregunta(tabla[indices[++indiceActual]]);
 					$("#contador").text(++contadorPreguntas);
 					break;
 

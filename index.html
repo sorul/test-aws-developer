@@ -66,10 +66,11 @@ display:inline;
 		
 		//Contador de preguntas
 		var contadorPreguntas = 1;
-		var href = String(window.location.href);
-		console.log(href);
+		var href = window.location.href;
+		var indiceActual = -1;
 		if(href.includes("?")){
 			contadorPreguntas = parseInt(href.split("?")[1])
+			indiceActual = contadorPreguntas - 1;
 		}
 		$("#contador").text(contadorPreguntas);
 		
@@ -106,7 +107,6 @@ display:inline;
 		
 		//Creamos un array de indices [0,nº de preguntas] aleatorios
 		var indicesAleatorios = [...Array(tabla.length).keys()].sort(function() {return Math.random() - 0.5});
-		var indiceActual = -1;
 		
 		//Pintamos la primera pregunta
 		pintarPregunta(tabla[indicesAleatorios[++indiceActual]]);

@@ -68,9 +68,11 @@ display:inline;
 		var contadorPreguntas = 1;
 		var href = window.location.href;
 		var indiceActual = -1;
+		var aleatorio = true;
 		if(href.includes("?")){
 			contadorPreguntas = parseInt(href.split("?")[1])
 			indiceActual = contadorPreguntas - 1;
+			aleatorio = false;
 		}
 		$("#contador").text(contadorPreguntas);
 		
@@ -105,18 +107,13 @@ display:inline;
 			tabla[i].push("<span id='explicacion' style='display:none'>"+$(explicaciones[i]).next()[0].innerHTML+"<span>");
 		}
 		
-		if(contadorPreguntas!=1){
+		if(!aleatorio){
 			//El array de indices no será aleatorio
 			var indices = [...Array(tabla.length).keys()]
 		}else{
 			//Creamos un array de indices [0,nº de preguntas] aleatorios
 			var indices = [...Array(tabla.length).keys()].sort(function() {return Math.random() - 0.5});
 		}
-		
-		console.log(indices);
-		console.log(contadorPreguntas);
-		console.log(indiceActual);
-		
 		
 		//Pintamos la primera pregunta
 		pintarPregunta(tabla[indices[++indiceActual]]);

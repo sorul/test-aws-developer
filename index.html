@@ -49,6 +49,7 @@ display:inline;
 <body>
 <script>
 	var indiceActual = -1;
+	var contadorPreguntas = 1;
 	//FUNCIONES
 	function pintarPregunta(pregunta){
 		$("#pregunta").append("<h1>"+pregunta[0]+"</h1>");
@@ -67,9 +68,7 @@ display:inline;
 		var tabla = [] // [pregunta, [r1,r2,r3], explicacion]
 		
 		//Contador de preguntas
-		var contadorPreguntas = 1;
 		var href = window.location.href;
-		indiceActual = -1;
 		var aleatorio = true;
 		if(href.includes("?")){
 			contadorPreguntas = parseInt(href.split("?")[1])
@@ -156,7 +155,7 @@ display:inline;
 				case 40: // down
 					break;
 					
-				case 32: // down
+				case 32: // espacio
 					$(".correcta").css("color","#00e400");
 					$("#explicacion").css("display","");
 					break;

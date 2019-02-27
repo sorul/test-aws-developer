@@ -73,6 +73,7 @@ display:inline;
 		if(href.includes("?")){
 			contadorPreguntas = parseInt(href.split("?")[1])
 			indiceActual = contadorPreguntas - 1;
+			console.log(">" + indiceActual)
 			aleatorio = false;
 		}
 		$("#contador").text(contadorPreguntas);

@@ -127,7 +127,6 @@ display:inline;
 		$("#siguiente").click(function(){
 			if(contadorPreguntas<indices.length){
 				$("#pregunta").empty();
-				console.log(indices[++indiceActual]);
 				pintarPregunta(tabla[indices[++indiceActual]]);
 				$("#contador").text(++contadorPreguntas);
 			}

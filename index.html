@@ -118,7 +118,7 @@ display:inline;
 			indices = [...Array(tabla.length).keys()].sort(function() {return Math.random() - 0.5});
 			
 		}
-		console.log("B>"+indices[indiceActual++]);
+		console.log("B>"+indices[++indiceActual]);
 		//Pintamos la primera pregunta
 		pintarPregunta(tabla[indices[++indiceActual]-1]);
 		

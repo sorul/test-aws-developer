@@ -128,7 +128,7 @@ display:inline;
 		$("#siguiente").click(function(){
 			if(contadorPreguntas<indices.length){
 				$("#pregunta").empty();
-				pintarPregunta(tabla[indices[indiceActual++]-1]);
+				pintarPregunta(tabla[indices[++indiceActual]-1]);
 				$("#contador").text(++contadorPreguntas);
 			}
 		});
@@ -152,7 +152,7 @@ display:inline;
 				case 39: // right
 					if(contadorPreguntas<indices.length){
 						$("#pregunta").empty();
-						pintarPregunta(tabla[indices[indiceActual++]-1]);
+						pintarPregunta(tabla[indices[++indiceActual]-1]);
 						$("#contador").text(++contadorPreguntas);
 					}
 					break;

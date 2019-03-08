@@ -129,21 +129,20 @@ display:inline;
 		$("#siguiente").click(function(){
 			if(contadorPreguntas<indices.length){
 				$("#pregunta").empty();
-				pintarPregunta(tabla[indices[++indiceActual]-1]);
+				pintarPregunta(tabla[indices[indiceActual++]-1]);
 				$("#contador").text(++contadorPreguntas);
 			}
 		});
 		$("#respuesta").click(function(){
 			$(".correcta").css("color","#00e400");
 			$("#explicacion").css("display","");
-		});	
+		});
 		$(document).keydown(function(e) {
 			switch(e.which) {
 				case 37: // left
 					if(indiceActual>0){
 						$("#pregunta").empty();
-						indiceActual -= 1
-						pintarPregunta(tabla[indices[indiceActual]-1]);
+						pintarPregunta(tabla[indices[--indiceActual]-1]);
 						$("#contador").text(--contadorPreguntas);
 					}
 					break;
@@ -154,7 +153,7 @@ display:inline;
 				case 39: // right
 					if(contadorPreguntas<indices.length){
 						$("#pregunta").empty();
-						pintarPregunta(tabla[indices[++indiceActual]-1]);
+						pintarPregunta(tabla[indices[indiceActual++]-1]);
 						$("#contador").text(++contadorPreguntas);
 					}
 					break;

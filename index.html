@@ -139,7 +139,7 @@ display:inline;
 		$(document).keydown(function(e) {
 			switch(e.which) {
 				case 37: // left
-					if(indiceActual>0){
+					if(indiceActual>1){
 						$("#pregunta").empty();
 						pintarPregunta(tabla[indices[--indiceActual]-1]);
 						$("#contador").text(--contadorPreguntas);

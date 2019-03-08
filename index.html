@@ -65,6 +65,14 @@ display:inline;
 		$("#pregunta").append("</ul></br>");
 		$("#pregunta").append("<strong>"+pregunta[2]+"</strong>");
 	}
+	
+	function siguiente(){
+		if(contadorPreguntas<indices.length){
+			$("#pregunta").empty();
+			pintarPregunta(tabla[indices[++indiceActual]-1]);
+			$("#contador").text(++contadorPreguntas);
+		}
+	}
 	//MAIN
 	$(function(){
 		//Contador de preguntas
@@ -126,11 +134,7 @@ display:inline;
 		
 		//Eventos de ratón
 		$("#siguiente").click(function(){
-			if(contadorPreguntas<indices.length){
-				$("#pregunta").empty();
-				pintarPregunta(tabla[indices[++indiceActual]-1]);
-				$("#contador").text(++contadorPreguntas);
-			}
+			siguiente();
 		});
 		$("#respuesta").click(function(){
 			$(".correcta").css("color","#00e400");
@@ -150,11 +154,7 @@ display:inline;
 					break;
 
 				case 39: // right
-					if(contadorPreguntas<indices.length){
-						$("#pregunta").empty();
-						pintarPregunta(tabla[indices[++indiceActual]-1]);
-						$("#contador").text(++contadorPreguntas);
-					}
+					siguiente();
 					break;
 
 				case 40: // down

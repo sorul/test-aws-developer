@@ -69,7 +69,7 @@ display:inline;
 	function siguiente(){
 		if(contadorPreguntas<indices.length){
 			$("#pregunta").empty();
-			console.log("Índice: "+indices[indiceActual+1]);
+			console.log("Índice: "+indices[indiceActual]);
 			pintarPregunta(tabla[indices[++indiceActual]]);
 			$("#contador").text(++contadorPreguntas);
 		}

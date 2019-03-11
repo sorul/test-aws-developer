@@ -56,7 +56,6 @@ display:inline;
 	
 	//FUNCIONES
 	function pintarPregunta(pregunta){
-		console.log("Indice: "+indiceActual);
 		$("#pregunta").append("<h1>"+pregunta[0]+"</h1>");
 		$("#pregunta").append("<ul>");
 		var respuestas = pregunta[1].sort(function() {return Math.random() - 0.5})
@@ -70,6 +69,7 @@ display:inline;
 	function siguiente(){
 		if(contadorPreguntas<indices.length){
 			$("#pregunta").empty();
+			console.log("Índice: "+indices[indiceActual+1]);
 			pintarPregunta(tabla[indices[++indiceActual]]);
 			$("#contador").text(++contadorPreguntas);
 		}

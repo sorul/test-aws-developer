@@ -56,6 +56,7 @@ display:inline;
 	
 	//FUNCIONES
 	function pintarPregunta(pregunta){
+		console.log("Indice: "+indiceActual);
 		$("#pregunta").append("<h1>"+pregunta[0]+"</h1>");
 		$("#pregunta").append("<ul>");
 		var respuestas = pregunta[1].sort(function() {return Math.random() - 0.5})

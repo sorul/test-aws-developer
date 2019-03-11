@@ -48,7 +48,7 @@ display:inline;
 </head>
 <body>
 <script>
-	var indiceActual = 0;
+	var indiceActual = -1;
 	var contadorPreguntas = 1;
 	var indices = [];
 	//Matriz con todas las preguntas
@@ -69,7 +69,7 @@ display:inline;
 	function siguiente(){
 		if(contadorPreguntas<indices.length){
 			$("#pregunta").empty();
-			pintarPregunta(tabla[indices[++indiceActual]-1]);
+			pintarPregunta(tabla[indices[++indiceActual]]);
 			$("#contador").text(++contadorPreguntas);
 		}
 	}
@@ -118,16 +118,16 @@ display:inline;
 		if(!aleatorio){
 			//El array de indices no será aleatorio
 			var a = new Set([...Array(tabla.length).keys()]);
-			var b = new Set([5,214,12,38,39,48,241,242,227,223,187,177,172,163,155,144,79,82,87,119,13,22,237,185,57,59,69,77,96,100,123,125,128,27,34,43,53,65,225,176,73,74,75,104,115,49,256,226,224,206,202,196,150,141,130,68,92,99,112,130,247,31,105,55,244,209,178,158,153,89,101,124,40,50,54,239,232,220,193,197,173,58,72,84,86,93,121,35,236,166,142,61,109,253,248,240,228,195,190,180,164,138,157,222,62,64,113,213,181,174,135,44,204,253,188,76,91,120,201,147,208,199,90,94,133,192,156,42,111,47,189,118]);
+			var b = new Set([4,213,11,37,38,47,240,241,226,222,186,176,171,162,154,143,78,81,86,118,12,21,236,184,56,58,68,76,95,99,122,124,127,26,33,42,52,64,224,175,72,73,74,103,114,48,255,225,223,205,201,195,149,140,129,67,91,98,111,129,246,30,104,54,243,208,177,157,152,88,100,123,39,49,53,238,231,219,192,196,172,57,71,83,85,92,120,34,235,165,141,60,108,252,247,239,227,194,189,179,163,137,156,221,61,63,112,212,180,173,134,43,203,252,187,75,90,119,200,146,207,198,89,93,132,191,155,41,110,46,188,117]);
 			indices = Array.from(new Set([...b, ...a]));
 		}else{
 			//Creamos un array de indices [0,nº de preguntas] aleatorios
 			indices = [...Array(tabla.length).keys()].sort(function() {return Math.random() - 0.5});
 			
 		}
-		//console.log("B>"+indices[++indiceActual]);
+		
 		//Pintamos la primera pregunta
-		pintarPregunta(tabla[indices[++indiceActual]-1]);
+		pintarPregunta(tabla[indices[++indiceActual]]);
 		
 		//Escribimos el contador a 1
 		$("#totalPreguntas").text(indices.length);
@@ -143,9 +143,9 @@ display:inline;
 		$(document).keydown(function(e) {
 			switch(e.which) {
 				case 37: // left
-					if(indiceActual>1){
+					if(indiceActual>0){
 						$("#pregunta").empty();
-						pintarPregunta(tabla[indices[--indiceActual]-1]);
+						pintarPregunta(tabla[indices[--indiceActual]]);
 						$("#contador").text(--contadorPreguntas);
 					}
 					break;

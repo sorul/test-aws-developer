@@ -1,0 +1,71 @@
+<div class="detailed-result-panel--panel-row--3GC5G detailed-result-panel--question-container--Wvw6U">
+	  <form class="">
+		 <div class="question hkqKL">
+			<span>Question 2: </span><span class="quiz-question--skipped--3vxeT label label-default">Skipped</span>
+			<div class="quiz-question--question-prompt--bNC4q" id="question-prompt">You are building a movie database. Which attribute is the best partition key to maximize data distribution in DynamoDB?</div>
+		 </div>
+		 <ul role="group" aria-labelledby="question-prompt">
+			<li>
+			   <div class="quiz-answer--answer-body--2ZLoP boxed radio disabled">
+				  <label title="">
+					 <input name="answer" data-index="0" type="radio" disabled="">
+					 <span class="radio-label">
+						<div class="fx fx-lc ">
+						   <div class="fx">
+							  <div class="quiz-answer--question-copy--2TSpZ">movie_language</div>
+						   </div>
+						</div>
+					 </span>
+				  </label>
+			   </div>
+			</li>
+			<li>
+			   <div class="quiz-answer--answer-body--2ZLoP quiz-answer--correct--1LFvk boxed radio disabled">
+				  <label title="">
+					 <input name="answer" data-index="1" type="radio" disabled="">
+					 <span class="radio-label">
+						<div class="fx fx-lc quiz-answer--correct--1LFvk">
+						   <div class="fx">
+							  <div class="quiz-answer--question-copy--2TSpZ">movie_id</div>
+						   </div>
+						   <div class="quiz-answer--correctness--zelL5">(Correct)</div>
+						</div>
+					 </span>
+				  </label>
+			   </div>
+			</li>
+			<li>
+			   <div class="quiz-answer--answer-body--2ZLoP boxed radio disabled">
+				  <label title="">
+					 <input name="answer" data-index="2" type="radio" disabled="">
+					 <span class="radio-label">
+						<div class="fx fx-lc ">
+						   <div class="fx">
+							  <div class="quiz-answer--question-copy--2TSpZ">lead_actor_name</div>
+						   </div>
+						</div>
+					 </span>
+				  </label>
+			   </div>
+			</li>
+			<li>
+			   <div class="quiz-answer--answer-body--2ZLoP boxed radio disabled">
+				  <label title="">
+					 <input name="answer" data-index="3" type="radio" disabled="">
+					 <span class="radio-label">
+						<div class="fx fx-lc ">
+						   <div class="fx">
+							  <div class="quiz-answer--question-copy--2TSpZ">producer_name</div>
+						   </div>
+						</div>
+					 </span>
+				  </label>
+			   </div>
+			</li>
+		 </ul>
+		 <div class="quiz-question--explanation--1HS_E">
+			<h4>Explanation</h4>
+			<div>As the movie_id is unique in nature across the entire collection of movies database, hence it is the suitable candidate for the partition key in this usecase. Read more: https://aws.amazon.com/blogs/database/choosing-the-right-dynamodb-partition-key/</div>
+		 </div>
+	  </form>
+   </div>
